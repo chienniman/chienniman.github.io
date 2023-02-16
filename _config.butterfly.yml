@@ -3,20 +3,20 @@
 # --------------------------------------
 
 menu:
-  # Home: / || fas fa-home
-  # Archives: /archives/ || fas fa-archive
+  主頁: / || fas fa-home
+  成就: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
-  # Categories: /categories/ || fas fa-folder-open
+  技術筆記: /categories/ || fas fa-folder-open
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-  # Link: /link/ || fas fa-link
-  # About: /about/ || fas fa-heart
+  關於: /about/ || fas fa-heart
+  聯絡: /link/ || fas fa-link
 
 nav:
   logo: # image
   display_title: true
-  fixed: false # fixed navigation bar
+  fixed: true # fixed navigation bar
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -667,8 +667,8 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: Github上找到我
+      link: https://github.com/chienniman
   card_announcement:
     enable: true
     content: This is my Blog
