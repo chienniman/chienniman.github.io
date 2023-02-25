@@ -64,3 +64,36 @@ cover: /images/cso.jpg
 3.加密存儲密碼：存儲密碼時，應使用加密算法進行加密，並避免使用明文存儲。
 
 4.多因素身份驗證：為了提高安全性，使用短信驗證碼、密碼和指紋等多種因素進行身份驗證。
+
+# Https Authentication
+
+#### Basic：
+
+一種HTTP驗證機制，它使用Base64將用戶名和密碼進行編碼，然後在HTTP請求中以Authorization標頭的形式傳送。簡單來說，當使用者輸入用戶名和密碼時，這些數據將被編碼並包含在HTTP請求中，伺服器收到請求後會解碼這些數據並進行身份驗證。
+
+![](/images/basic-auth.jpg)
+
+#### 簡易的測試
+[jigsaw.w3.org測試網址](https://jigsaw.w3.org/HTTP/)
+
+![](/images/auth-login.jpg)
+
+```
+ac:guest
+pw:guest
+```
+> 一個有因應此策略的client訪問一個使用Basic Authentication的server
+伺服器會檢查在Header裡的Authorization欄位，規格應為 Authorization: Basic <value>
+此時因為沒有Authorization並沒有資料，server按照約定會回傳401 status code並在Header上加上 WWW-Authenticate: Basic realm="<value>"
+client當發現得到以上的回應後，會出現一個給予使用者輸入用戶名稱及密碼的地方
+client將用戶名稱跟密碼做成一個base64的資料，虛擬碼表示為: base64(username:password)
+client將資料放到Header: Authorization: base64(username:password)
+server重複2開始的動作。
+[先生你誰?-身分驗證Authentication (Basic, token, JWT)](https://ithelp.ithome.com.tw/articles/10304135)
+![](/images/auth-success.jpg)
+
+把header的authentication取出base64解碼可以看到正好是輸入的帳密
+```
+base64(username:password)
+```
+![](/images/base64.jpg)
