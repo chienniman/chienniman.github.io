@@ -70,9 +70,7 @@ app.post("/{route}", line.middleware(config), (req, res) => {
 
 
 #### 5.注意
-:::danger
 沒有正確地設定ngrok，防火牆、密碼，可能導致安全風險，使用完記得ctrl+c退出
-:::
 
 #### 6.問題
 ngrok運行500，terminal顯示404，因為token沒設定好
