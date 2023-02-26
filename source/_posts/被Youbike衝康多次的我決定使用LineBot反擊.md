@@ -17,7 +17,7 @@ cover: /images/u-bike.jpg
 ### Code
 1.create repo、clone
 
-2.安裝 Express.js 和 LINE Bot SDK，相依套件
+2.install Express.js 、LINE Bot SDK、dep
 
 ```
 npm install express @line/bot-sdk dotenv
@@ -32,7 +32,40 @@ npm install express @line/bot-sdk dotenv
 - Node.js
 
 
-3.創建一個 index.js 文件並啟動 Express.js 伺服器
+3.創建一個 index.js 文件並啟動 Express.js 伺服器，建議使用nodemon，可以節省大量時間
+
+## API
+上網搜了一下發現臺中交通資訊API整合的相當不錯，Swagger的文件架構清晰，井然有序，這邊給個讚，~~台中路面狀況如果也可以就謝天謝地了~~。
+
+[臺中交通資訊API](https://motoretag.taichung.gov.tw/DataAPI/swagger/ui/index#/YoubikeAPI)
+![](/images/youbike-api.jpg)
+
+## LINE 
+### 創建 LINE Developers 帳號：
+首先你需要先創建一個 LINE Developers 帳號
+[註冊網址](https://developers.line.biz/en/)
+
+### 創建 LINE Bot channel：
+登入後點選 Create new channel 創建新的 LINE Bot 頻道，並且填寫頻道相關資訊（例如：頻道名稱、頻道圖片、類型等等）。
+![](/images/channel.jpg)
+
+
+
+#### 問題-更新時間
+當我飛速敲完鍵盤，張開雙手準備享受terminal如瀑布般傾瀉而出的資料時，發現奇怪的事情，不對阿，為何更新時間對不上，如果差幾分鐘就算了，但是足足差了幾個小時，欄位資料也對不上
+##### 早上四點更新
+```
+https://motoretag.taichung.gov.tw/DataAPI/api/YoubikeAllAPI
+```
+##### 及時更新
+```
+https://datacenter.taichung.gov.tw/swagger/OpenData/9af00e84-473a-4f3d-99be-b875d8e86256
+```
+上網搜了一下也沒找到原因，猜測是更新頻率不同
+
+
+3.創建一個 index.js 文件並啟動 Express.js 伺服器，建議使用nodemon，可以節省大量時間
+
 ### 本地測試
 > 方法一(在相同內網情況下分享)
 方法第一種是利用區網(此方法限定對方和你同時連上同一個網域)，適用的人像是跟你同時在同一個地方的工作夥伴，只要確保對方和你同時連上相同的區網就可以囉！
@@ -88,27 +121,13 @@ That is why LINE Developers uses channel access tokens as a means of authenticat
 
 如果找不到，Channel Access Token在messaging-api的最下面，有個issue的按鈕，也要檢查env是否有正確設定
 
-#### 7.成功
-恭喜，到這邊你獲得一隻會打印hello world的webhook機器人
-![](/images/success.jpg)
+#### 7.問題-ngrok ip4 ip6
+分發的ip4/ip6取決於網路服務供應商，有時候機器人掛掉沒反應，可能是ngrok網路嚴重延遲導致，開啟/重開，ngrok 會隨機分配一個公共的subdomain，因此必須持續在line webhook更新，驗證以確保設定正確。
 
 
+#### 8.朋友的悲慘~~搞笑~~故事
+小弟的朋友花了幾千開了一台性能不錯的機器，興高采烈的要架設(私服)遊戲伺服器，過度膨脹的他沒設密碼，沒過幾天時間就被各路神仙開腸剖肚，被木馬感染，打遊戲的時候發現很卡，覺得很奇怪去查了以後發現資源都被拿去挖礦拉
 
-#### 7.朋友的悲慘~~搞笑~~故事
-小弟的朋友花了幾千開了一台性能不錯的機器，興高采烈的要架設(私服)遊戲伺服器，沒設密碼，沒過幾天時間就被各路神仙開腸剖肚，被木馬感染，打遊戲的時候發現很卡，覺得很奇怪去查了以後發現資源都被拿去挖礦拉
-
-
-## API
-上網搜了一下發現臺中交通資訊API整合的相當不錯，Swagger的文件架構清晰，井然有序，這邊給個讚，~~台中路面狀況如果也可以就謝天謝地了~~。
-
-[臺中交通資訊API](https://motoretag.taichung.gov.tw/DataAPI/swagger/ui/index#/YoubikeAPI)
-![](/images/youbike-api.jpg)
-
-## LINE 
-### 創建 LINE Developers 帳號：
-首先你需要先創建一個 LINE Developers 帳號
-[註冊網址](https://developers.line.biz/en/)
-
-### 創建 LINE Bot channel：
-登入後點選 Create new channel 創建新的 LINE Bot 頻道，並且填寫頻道相關資訊（例如：頻道名稱、頻道圖片、類型等等）。
-![](/images/channel.jpg)
+### 結果1-成功查詢youbike站點
+目前已能成功查詢出發、目的、備用站的狀況，排版還須改善，接下來就是部屬與自動排程
+![](/images/query-youbike-success.jpg)
