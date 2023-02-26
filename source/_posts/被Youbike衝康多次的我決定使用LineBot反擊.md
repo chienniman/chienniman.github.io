@@ -12,9 +12,10 @@ cover: /images/u-bike.jpg
 ---
 # 被Youbike衝康多次的我決定使用LineBot反擊
 
+## 關於上班這檔事
 每天依賴Youbike通勤上下班，眼瞅著手錶的指針朝上班的死線漸漸逼近，火急火燎趕到公司樓下卻發現沒有空位，常常車數非常極端，要不爆滿(全滿+一堆放旁邊用繩子綁著)，要不一台都沒，只能花費雙倍路程時間到上一站，上網搜尋可行的解決方案，手動查詢Youbike地圖是不錯的解決方案，但對壓線出門的懶人不是最佳解，那如果每天早上固定收到通知呢?
 
-### Code
+## Code
 1.create repo、clone
 
 2.install Express.js 、LINE Bot SDK、dep
@@ -71,41 +72,39 @@ https://datacenter.taichung.gov.tw/swagger/OpenData/9af00e84-473a-4f3d-99be-b875
 方法第一種是利用區網(此方法限定對方和你同時連上同一個網域)，適用的人像是跟你同時在同一個地方的工作夥伴，只要確保對方和你同時連上相同的區網就可以囉！
 首先查詢你的電腦 ip 位置， windows 使用者開啟終端機輸入 ipconfig 即可查詢你目前 ip 位置，macOS 的使用者可以打開網路偏好設定裡面就有 ip 位置了。
 
-### ngrok
+## ngrok
 > ngrok 做為一個轉發的伺服器，他可以把外界的請求轉發到你指定的 Port，使用的背景原理是連接到 ngrok 雲端伺服器，將你本機指定的地址公開，再將由 ngrok 一串公開的網址來存取內容。他的優點是快速而且還提供了 https 的服務讓你使用上更安全，甚至你還可以設置密碼保護。
 
 [ref-[Day-37] 使用 ngrok 讓外網連接你的 API](https://ithelp.ithome.com.tw/articles/10197345)
 
-#### 1.安裝
-#### 2.執行
+### 1.安裝
+### 2.執行
 
 windows，點exe，linux， cd ngrok
 ```
 ngrok.exe http {port}
 ```
-#### 3.結果 
+### 3.執行 
 ```
 <!-- 雲端映射本地 -->
 Forwarding https://xxxxxx.ngrok.io -> localhost:{port}
 ```
-#### 4.設定
-##### Line Webhook URL
+#### 4.Line &　ngrok　對應
+#### Line Webhook URL
 ```
 https://{ngrok}/{route}
 ```
-##### backend
+#### backend
 ```
 app.post("/{route}", line.middleware(config), (req, res) => {
     <!--  logic here    -->
 });
 ```
 
-
-
 #### 5.注意
 沒有正確地設定ngrok，防火牆、密碼，可能導致安全風險，使用完記得ctrl+c退出
 
-#### 6.問題
+#### 6.驗證失敗
 ngrok運行500，terminal顯示404，因為token沒設定好
 ![](/images/500.jpg)
 
@@ -126,8 +125,8 @@ That is why LINE Developers uses channel access tokens as a means of authenticat
 
 
 #### 8.朋友的悲慘~~搞笑~~故事
-小弟的朋友花了幾千開了一台性能不錯的機器，興高采烈的要架設(私服)遊戲伺服器，過度膨脹的他沒設密碼，沒過幾天時間就被各路神仙開腸剖肚，被木馬感染，打遊戲的時候發現很卡，覺得很奇怪去查了以後發現資源都被拿去挖礦拉
+小弟的朋友花了幾千開了一台性能不錯的機器，興高采烈的要架設(私服)遊戲伺服器，過度膨脹的他沒設密碼，沒過幾天時間就被各路神仙開腸剖肚，被木馬感染，打遊戲的時候發現很卡，覺得很奇怪去查了以後發現資源都被拿去幫大佬挖礦拉
 
-### 結果1-成功查詢youbike站點
+## 結果1-成功查詢youbike站點
 目前已能成功查詢出發、目的、備用站的狀況，排版還須改善，接下來就是部屬與自動排程
 ![](/images/query-youbike-success.jpg)
