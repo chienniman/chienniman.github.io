@@ -129,6 +129,11 @@ live2d:
         show: true
     react:
         opacity: 0.7
+
+#Sitemap
+sitemap:
+    path: sitemap.xml
+    
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
