@@ -109,7 +109,7 @@ live2d:
     tagMode: false
     debug: false
     model:
-        use: wanko
+        use: live2d-widget-model-wanko
     display:
         position: left
         width: 100
