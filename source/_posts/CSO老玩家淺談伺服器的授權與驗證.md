@@ -75,12 +75,13 @@ cover: /images/cso.jpg
 
 ![](/images/basic-auth.jpg)
 
-### Express.js server-side demo
-```
+### Express.js
+
+{% codeblock lang:js %}
 const express = require('express');
 const app = express();
 
-// mock only
+// mock
 const username = 'admin';
 const password = 'password';
 
@@ -115,8 +116,8 @@ app.get('/protected', auth, (req, res) => {
 app.listen(3000, () => {
   console.log('Server started on port 3000');
 });
+{% endcodeblock %}
 
-```
 
 ### 簡易的測試
 [jigsaw.w3.org測試網址](https://jigsaw.w3.org/HTTP/)
@@ -166,8 +167,8 @@ response = MD5(HA1:nonce:HA2)
 ```
 - 服務器使用相同的計算方式驗證。如果正確，服務器會返回請求的資源，否則，返回401未授權或其他錯誤狀態碼，客戶端必須重新進行身份驗證。
 
-### Express.js server-side demo
-```
+### Express.js
+{% codeblock lang:js %}
 const express = require('express');
 const passport = require('passport');
 const DigestStrategy = require('passport-http').DigestStrategy;
@@ -193,5 +194,5 @@ app.get('/digest', passport.authenticate('digest', { session: false }),
 );
 
 app.listen(3000, () => console.log('App started on port 3000'));
+{% endcodeblock %}
 
-```
