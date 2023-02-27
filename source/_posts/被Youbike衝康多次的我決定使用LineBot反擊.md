@@ -32,8 +32,39 @@ npm install express @line/bot-sdk dotenv
 - Python
 - Node.js
 
+### express.js排程
+```
+npm install --save node-cron
+```
+{% codeblock lang:js %}
+const cron = require("node-cron");
+cron.schedule(
+    "min hr * * *",
+    () => {
+        try {
+            const message = {
+                type: "text",
+                text: "晚上好！排程測試",
+            };
+            const client = new line.Client(config);
+            client
+                .pushMessage("U8ea9e9bf8d5b3a3162f67cf9b91642dd", message)
+                .then(() => console.log("Message sent!"))
+                .catch((err) => console.error(err));
+        } catch (e) {
+            console.error(e);
+        }
+    },
+    {
+        scheduled: true,
+        timezone: "Asia/Taipei",
+    }
+);
+{% endcodeblock %}
+![](/images/cron-test.jpg)
 
-3.創建一個 index.js 文件並啟動 Express.js 伺服器，建議使用nodemon，可以節省大量時間
+
+3.啟動 Express.js 伺服器，建議使用nodemon，可以節省大量時間
 
 ## API
 上網搜了一下發現臺中交通資訊API整合的相當不錯，Swagger的文件架構清晰，井然有序，這邊給個讚，~~台中路面狀況如果也可以就謝天謝地了~~。
@@ -112,7 +143,6 @@ ngrok運行500，terminal顯示404，因為token沒設定好
 ![](/images/404.jpg)
 
 channel access tokens
-![](/images/auth-login.jpg)
 > For services available on the Internet, authentication via IDs and passwords is often used as a means of verifying whether a person has permission to use the service. LINE Developers also verifies and confirms that a person has permission to use a specific channel. However, entering an ID and password every time you use a channel (for Messaging API channels, every time you use an endpoint in the Messaging API) takes too much effort and is therefore suboptimal.
 That is why LINE Developers uses channel access tokens as a means of authentication for channels. If you send the correct channel access token to LINE Developers, you are deemed to have permission to use the channel.
 
@@ -120,11 +150,13 @@ That is why LINE Developers uses channel access tokens as a means of authenticat
 
 如果找不到，Channel Access Token在messaging-api的最下面，有個issue的按鈕，也要檢查env是否有正確設定
 
-#### 7.問題-ngrok ip4 ip6
+#### 7.網路延遲
 分發的ip4/ip6取決於網路服務供應商，有時候機器人掛掉沒反應，可能是ngrok網路嚴重延遲導致，開啟/重開，ngrok 會隨機分配一個公共的subdomain，因此必須持續在line webhook更新，驗證以確保設定正確。
 
+#### 8. 502-bad-gateway
+檢查伺服器有無開啟、錯誤訊息 
 
-#### 8.朋友的悲慘~~搞笑~~故事
+#### 9.附錄-朋友的悲慘~~搞笑~~故事
 小弟的朋友花了幾千開了一台性能不錯的機器，興高采烈的要架設(私服)遊戲伺服器，過度膨脹的他沒設密碼，沒過幾天時間就被各路神仙開腸剖肚，被木馬感染，打遊戲的時候發現很卡，覺得很奇怪去查了以後發現資源都被拿去幫大佬挖礦拉
 
 ## 結果1-成功查詢youbike站點
