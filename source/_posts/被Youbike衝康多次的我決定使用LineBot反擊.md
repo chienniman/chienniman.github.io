@@ -48,7 +48,7 @@ cron.schedule(
             };
             const client = new line.Client(config);
             client
-                .pushMessage("U8ea9e9bf8d5b3a3162f67cf9b91642dd", message)
+                .pushMessage({user-id}, message)
                 .then(() => console.log("Message sent!"))
                 .catch((err) => console.error(err));
         } catch (e) {
