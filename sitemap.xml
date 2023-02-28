@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://chienniman.github.io/owner/google0f195ecac6e90bc3.html</loc>
+    <loc>https://chienniman.github.io/google0f195ecac6e90bc3.html</loc>
     
     <lastmod>2023-02-27</lastmod>
     
@@ -101,6 +101,27 @@
 
   
   <url>
+    <loc>https://chienniman.github.io/tags/Frontend/</loc>
+    <lastmod>2023-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chienniman.github.io/tags/React-js/</loc>
+    <lastmod>2023-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chienniman.github.io/tags/Mantine/</loc>
+    <lastmod>2023-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://chienniman.github.io/tags/Backend/</loc>
     <lastmod>2023-02-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -143,21 +164,7 @@
   </url>
   
   <url>
-    <loc>https://chienniman.github.io/tags/Frontend/</loc>
-    <lastmod>2023-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://chienniman.github.io/tags/React-js/</loc>
-    <lastmod>2023-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://chienniman.github.io/tags/Mantine/</loc>
+    <loc>https://chienniman.github.io/tags/Iframe/</loc>
     <lastmod>2023-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -165,13 +172,6 @@
   
   <url>
     <loc>https://chienniman.github.io/tags/AZ-900/</loc>
-    <lastmod>2023-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://chienniman.github.io/tags/Iframe/</loc>
     <lastmod>2023-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
