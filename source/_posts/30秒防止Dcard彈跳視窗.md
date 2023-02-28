@@ -7,7 +7,7 @@ tags:
     - Mantine
 cover: /images/dcard.jpg
 ---
-## 可以不要叫我一直登入嗎
+## 可以不要一直叫我登入嗎
 有時在網路上看到有趣的Dcard文章，好奇點進去，看留言時卻跳出討厭的登入視窗，這篇文章會示範如何在30秒內關閉。
 1. 點擊F12，開發者工具
 ![](/images/dcard.jpg)
@@ -25,7 +25,7 @@ cover: /images/dcard.jpg
 
 {% codeblock lang:js %}
 window.addEventListener('load', function() {
-    const popup = document.getElementById({model-root-id});
+    const popup = document.getElementById({modal--id});
     if (popup) {
         popup.remove();
         document.body.style.overflow = 'scroll';
@@ -33,9 +33,9 @@ window.addEventListener('load', function() {
 });
 {% endcodeblock %}
 
-## 自己做一個
+## 魔法對付魔法-自己做一個彈跳視窗
 不少函式庫都有封裝好的元件可以使用，以React components庫Mantine來舉例
-### React
+### React.js
 {% codeblock lang:js %}
 import { useState } from 'react';
 import { Modal, Button, Group } from '@mantine/core';

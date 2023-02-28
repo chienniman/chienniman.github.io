@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Boris's Blogs
-subtitle: ""
-description: ""
-keywords:
+title: Chienniman's Blogs
+subtitle: Chienniman's Blogs
+description: Chienniman's Blogs
+keywords: Chienniman's Blogs
 author: Boris Chien
 language: zh-TW
 timezone: Asia/Taipei
@@ -14,7 +14,7 @@ timezone: Asia/Taipei
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://chienniman.github.io/
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
     trailing_index: true # Set to false to remove trailing 'index.html' from permalinks

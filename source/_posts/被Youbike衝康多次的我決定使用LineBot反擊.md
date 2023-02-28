@@ -15,7 +15,7 @@ cover: /images/u-bike.jpg
 ## 關於上班這檔事
 每天依賴Youbike通勤上下班，眼瞅著手錶的指針朝上班的死線漸漸逼近，火急火燎趕到公司樓下卻發現沒有空位，常常車數非常極端，要不爆滿(全滿+一堆放旁邊用繩子綁著)，要不一台都沒，只能花費雙倍路程時間到上一站，上網搜尋可行的解決方案，手動查詢Youbike地圖是不錯的解決方案，但對壓線出門的懶人不是最佳解，那如果每天早上固定收到通知呢?
 
-## Code
+## Express.js
 1.create repo、clone
 
 2.install Express.js 、LINE Bot SDK、dep
@@ -32,7 +32,7 @@ npm install express @line/bot-sdk dotenv
 - Python
 - Node.js
 
-### express.js排程
+### Express.js 排程測試
 ```
 npm install --save node-cron
 ```
@@ -66,7 +66,7 @@ cron.schedule(
 
 3.啟動 Express.js 伺服器，建議使用nodemon，可以節省大量時間
 
-## API
+## 臺中交通資訊API
 上網搜了一下發現臺中交通資訊API整合的相當不錯，Swagger的文件架構清晰，井然有序，這邊給個讚，~~台中路面狀況如果也可以就謝天謝地了~~。
 
 [臺中交通資訊API](https://motoretag.taichung.gov.tw/DataAPI/swagger/ui/index#/YoubikeAPI)
@@ -85,7 +85,7 @@ cron.schedule(
 
 #### 問題-更新時間
 當我飛速敲完鍵盤，張開雙手準備享受terminal如瀑布般傾瀉而出的資料時，發現奇怪的事情，不對阿，為何更新時間對不上，如果差幾分鐘就算了，但是足足差了幾個小時，欄位資料也對不上
-##### 早上四點更新
+##### 延遲
 ```
 https://motoretag.taichung.gov.tw/DataAPI/api/YoubikeAllAPI
 ```
@@ -159,6 +159,6 @@ That is why LINE Developers uses channel access tokens as a means of authenticat
 #### 9.附錄-朋友的悲慘~~搞笑~~故事
 小弟的朋友花了幾千開了一台性能不錯的機器，興高采烈的要架設(私服)遊戲伺服器，過度膨脹的他沒設密碼，沒過幾天時間就被各路神仙開腸剖肚，被木馬感染，打遊戲的時候發現很卡，覺得很奇怪去查了以後發現資源都被拿去幫大佬挖礦拉
 
-## 結果1-成功查詢youbike站點
+## 里程碑1-成功查詢youbike站點
 目前已能成功查詢出發、目的、備用站的狀況，排版還須改善，接下來就是部屬與自動排程
 ![](/images/query-youbike-success.jpg)
