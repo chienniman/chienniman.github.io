@@ -134,6 +134,21 @@ live2d:
 sitemap:
     path: sitemap.xml
     
+markdown:
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-container
+    - markdown-it-deflist
+    - markdown-it-emoji
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-mark
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-task-checkbox
+    - markdown-it-plus
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
