@@ -148,6 +148,9 @@ markdown:
     - markdown-it-task-checkbox
     - markdown-it-plus
 
+nofollow:
+  enable: true
+  field: site
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
