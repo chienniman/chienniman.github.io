@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>30秒解決Dcard彈跳視窗</title>
+      <link href="/2023/02/28/30%E7%A7%92%E9%98%B2%E6%AD%A2Dcard%E5%BD%88%E8%B7%B3%E8%A6%96%E7%AA%97/"/>
+      <url>/2023/02/28/30%E7%A7%92%E9%98%B2%E6%AD%A2Dcard%E5%BD%88%E8%B7%B3%E8%A6%96%E7%AA%97/</url>
+      
+        <content type="html"><![CDATA[<h2 id="可以不要叫我一直登入嗎"><a href="#可以不要叫我一直登入嗎" class="headerlink" title="可以不要叫我一直登入嗎"></a>可以不要叫我一直登入嗎</h2><p>有時在網路上看到有趣的Dcard文章，好奇點進去，看留言時卻跳出討厭的登入視窗，這篇文章會示範如何在30秒內關閉。</p><ol><li><p>點擊F12，開發者工具<br><img src="/images/dcard.jpg"></p></li><li><p>找到彈跳視窗根元素(最外層，屬性tabindex&#x3D;”0”)，點滑鼠右鍵，刪除元素，這時候就可以看到乾淨漂亮的頁面了~但是還是不能滾動<br><img src="/images/root-element.jpg"></p></li><li><p>往上滑找到body元素，element屬性加上overflow:scroll<br><img src="/images/dcard-scroll.jpg"></p></li><li><p>大功告成，不需要打帳密了</p></li></ol><h2 id="全自動執行"><a href="#全自動執行" class="headerlink" title="全自動執行"></a>全自動執行</h2><p>做成Chrome Extension，這裡提供思路，封裝實作可以參考<a href="https://ithelp.ithome.com.tw/articles/10186017">這篇文章</a></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">window</span>.<span class="title function_">addEventListener</span>(<span class="string">&#x27;load&#x27;</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> popup = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(&#123;model-root-id&#125;);</span><br><span class="line">    <span class="keyword">if</span> (popup) &#123;</span><br><span class="line">        popup.<span class="title function_">remove</span>();</span><br><span class="line">        <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">style</span>.<span class="property">overflow</span> = <span class="string">&#x27;scroll&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="自己做一個"><a href="#自己做一個" class="headerlink" title="自己做一個"></a>自己做一個</h2><p>不少函式庫都有封裝好的元件可以使用，以React components庫Mantine來舉例</p><h3 id="React"><a href="#React" class="headerlink" title="React"></a>React</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; useState &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Modal</span>, <span class="title class_">Button</span>, <span class="title class_">Group</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@mantine/core&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Demo</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [opened, setOpened] = <span class="title function_">useState</span>(<span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">Modal</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        <span class="attr">opened</span>=<span class="string">&#123;opened&#125;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        <span class="attr">onClose</span>=<span class="string">&#123;()</span> =&gt;</span> setOpened(false)&#125;</span></span><br><span class="line"><span class="language-xml">        title=&quot;Introduce yourself!&quot;</span></span><br><span class="line"><span class="language-xml">      &gt;</span></span><br><span class="line"><span class="language-xml">        &#123;/* Modal content */&#125;</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">Modal</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">Group</span> <span class="attr">position</span>=<span class="string">&quot;center&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">Button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> setOpened(true)&#125;&gt;Open Modal<span class="tag">&lt;/<span class="name">Button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">Group</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/images/mantine-modal.jpg"><br><a href="https://mantine.dev/core/modal/">mantine modal</a></p><h2 id="免責聲明"><a href="#免責聲明" class="headerlink" title="免責聲明"></a>免責聲明</h2><p>本文僅為客戶端提供教學示範之用，請勿用於任何影響網頁正常運作的技術，否則將承擔相應的法律責任。</p><p>本文所述的技術僅限於學習和研究目的，任何使用者若因濫用本文中的技術所造成的任何損失或損害，作者概不負責。</p><p>任何使用者在使用本文中的技術前，應該仔細閱讀並理解相關技術的風險和可能的後果。使用者應自行承擔所有風險和責任，作者不對因使用本文中的技術所造成的任何損失或損害負責。</p><p>本文中提供的技術僅供參考，並不保證其準確性和可靠性。作者不承擔任何因使用本文中的技術而引起的損失或損害的任何責任。</p><p>最後，作者保留隨時修改本免責聲明的權利。任何修改將在本文中公佈，敬請留意。</p><p>敬祈使用者慎重考慮並尊重相關法律法規。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Frontend </tag>
+            
+            <tag> React.js </tag>
+            
+            <tag> Mantine </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>被Youbike衝康多次的我決定使用LineBot反擊</title>
       <link href="/2023/02/25/%E8%A2%ABYoubike%E8%A1%9D%E5%BA%B7%E5%A4%9A%E6%AC%A1%E7%9A%84%E6%88%91%E6%B1%BA%E5%AE%9A%E4%BD%BF%E7%94%A8LineBot%E5%8F%8D%E6%93%8A/"/>
       <url>/2023/02/25/%E8%A2%ABYoubike%E8%A1%9D%E5%BA%B7%E5%A4%9A%E6%AC%A1%E7%9A%84%E6%88%91%E6%B1%BA%E5%AE%9A%E4%BD%BF%E7%94%A8LineBot%E5%8F%8D%E6%93%8A/</url>
@@ -72,9 +95,9 @@
       
         <tags>
             
-            <tag> Iframe </tag>
-            
             <tag> Frontend </tag>
+            
+            <tag> Iframe </tag>
             
         </tags>
       
