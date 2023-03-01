@@ -1,14 +1,26 @@
 ---
 title: 被Youbike衝康多次的我決定使用LineBot反擊
-date: 2023-02-25 22:24:54
 tags:
-    - Backend
-    - LineBot
-    - Webhook
-    - ngrok
-    - LINE Developers
-    - Youbike API
+  - Backend
+  - LineBot
+  - Webhook
+  - ngrok
+  - LINE Developers
+  - Youbike API
+  - Express.js
 cover: /images/u-bike.jpg
+abbrlink: '2482'
+date: 2023-02-25 22:24:54
+author: Boris Chien
+description: 每天依賴Youbike通勤上下班，眼瞅著手錶的指針朝上班的死線漸漸逼近，火急火燎趕到公司樓下卻發現沒有空位，常常車數非常極端，要不爆滿(全滿+一堆放旁邊用繩子綁著)，要不一台都沒，只能花費雙倍路程時間到上一站，上網搜尋可行的解決方案，手動查詢Youbike地圖是不錯的解決方案，但對壓線出門的懶人不是最佳解，那如果每天早上固定收到通知呢?
+keywords:
+  - Backend
+  - LineBot
+  - Webhook
+  - ngrok
+  - LINE Developers
+  - Youbike API
+  - Express.js
 ---
 # 被Youbike衝康多次的我決定使用LineBot反擊
 

@@ -1,10 +1,15 @@
 ---
 title: 無限嵌套的網頁-Iframe
-date: 2023-02-20 21:14:23
 tags:
-    - Iframe
-    - Frontend
+  - Iframe
+  - Frontend
 cover: /images/russianDoll.jpg
+abbrlink: cfa3
+date: 2023-02-20 21:14:23
+author: Boris Chien
+description: HTML 標籤中的一種，用來在網頁中嵌入另一個網頁或者其他資源，以Youtube例子，最簡單的方式點擊影片的分享、嵌入，複製貼進html，大功告成
+keywords:
+  - Iframe
 ---
 
 HTML 標籤中的一種，用來在網頁中嵌入另一個網頁或者其他資源，以Youtube例子，

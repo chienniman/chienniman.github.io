@@ -1,14 +1,23 @@
 ---
 title: 30秒解決Dcard彈跳視窗
-date: 2023-02-28 14:12:05
 tags:
-    - Frontend
-    - React.js
-    - Mantine
+  - Frontend
+  - React.js
+  - Mantine
 cover: /images/dcard.jpg
+abbrlink: d0fe
+date: 2023-02-28 14:12:05
+author: Boris Chien
+description: 有時在網路上看到有趣的Dcard文章，好奇點進去，看留言時卻跳出討厭的登入視窗，這篇文章會示範如何用開發者工具在30秒內關閉，並教你如何自己做一個彈跳視窗。
+keywords:
+  - Frontend
+  - React.js
+  - Mantine
+  - Dcard
+  - Modal
 ---
 ## 可以不要一直叫我登入嗎
-有時在網路上看到有趣的Dcard文章，好奇點進去，看留言時卻跳出討厭的登入視窗，這篇文章會示範如何在30秒內關閉。
+有時在網路上看到有趣的Dcard文章，好奇點進去，看留言時卻跳出討厭的登入視窗，這篇文章會示範如何用開發者工具在30秒內關閉，並教你如何自己做一個彈跳視窗
 1. 點擊F12，開發者工具
 ![](/images/dcard.jpg)
 

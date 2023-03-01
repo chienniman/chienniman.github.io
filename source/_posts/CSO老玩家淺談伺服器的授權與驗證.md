@@ -1,14 +1,16 @@
 ---
 title: CSO老玩家談伺服器的授權、驗證、實作
-date: 2023-02-21 23:02:00
 tags:
-    - Backend
-    - Server
-    - Authentication
-    - Authorization
-    - Express.js
-    - Node.js
+  - Backend
+  - Server
+  - Authentication
+  - Authorization
+  - Express.js
+  - Node.js
 cover: /images/cso.jpg
+abbrlink: 8be7
+date: 2023-02-21 23:02:00
+author: Boris Chien
 ---
 
 國中回到家的第一件事，衝到電腦桌前，輕車熟路地打開遊戲，心中抑制不住的雀躍感讓腎上腺素飆升，手指沁出汗液，CSO(射擊遊戲)，無數70、80後少年花費了大把的黃金歲月與金錢，為了能獲得"氪金神氣"。
