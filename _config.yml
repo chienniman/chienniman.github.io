@@ -147,7 +147,7 @@ markdown:
     - markdown-it-sup
     - markdown-it-task-checkbox
     - markdown-it-plus
-
+    
 nofollow:
   enable: true
   field: site
