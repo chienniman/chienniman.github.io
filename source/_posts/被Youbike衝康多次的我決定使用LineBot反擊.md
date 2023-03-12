@@ -1,5 +1,5 @@
 ---
-title: 被Youbike衝康多次的我決定使用LineBot反擊
+title: 被Youbike衝康過的我決定使用LineBot反擊
 tags:
     - Backend
     - LineBot
@@ -8,11 +8,13 @@ tags:
     - LINE Developers
     - Youbike API
     - Express.js
+    - Youbike
+    - render
 cover: /images/u-bike.jpg
 abbrlink: "2482"
 date: 2023-02-25 22:24:54
 author: Boris Chien
-description: 每天依賴Youbike通勤上下班，眼瞅著手錶的指針朝上班的死線漸漸逼近，火急火燎趕到公司樓下卻發現沒有空位，常常車數非常極端，要不爆滿(全滿+一堆放旁邊用繩子綁著)，要不一台都沒，只能花費雙倍路程時間到上一站，上網搜尋可行的解決方案，手動查詢Youbike地圖是不錯的解決方案，但對壓線出門的懶人不是最佳解，那如果每天早上固定收到通知呢?
+description: 依賴 Youbike 通勤上下班，眼瞅著手錶的指針朝上班的死線漸漸逼近，火急火燎趕到公司樓下卻發現沒有空位，車數有時很極端，爆滿(全滿+一堆放旁邊用繩子綁著)，或是一台都沒，只能花費雙倍路程時間步行到上一站，搜尋可行的解決方案，別人製作的Youbike 地圖是不錯的解決方案，但對壓線出門的懶人不是最佳解，重複的查詢、比較、紀錄相當多餘，真正能解決痛點的是固定時間、客製化、快速查詢工具。
 keywords:
     - Backend
     - LineBot
@@ -21,15 +23,20 @@ keywords:
     - LINE Developers
     - Youbike API
     - Express.js
+    - Youbike
+    - render
+categories:
+    - Backend
+    - LineBot
 ---
 
 ## 關於騎腳踏車上班
 
-每天依賴 Youbike 通勤上下班，眼瞅著手錶的指針朝上班的死線漸漸逼近，火急火燎趕到公司樓下卻發現沒有空位，車數常常非常極端，要不爆滿(全滿+一堆放旁邊用繩子綁著)，要不一台都沒，只能花費雙倍路程時間步行到上一站，搜尋可行的解決方案，手動查詢 Youbike 地圖是不錯的解決方案，但對壓線出門的懶人不是最佳解，那如果每天早上固定收到通知呢?
+依賴 Youbike 通勤上下班，眼瞅著手錶的指針朝上班的死線漸漸逼近，火急火燎趕到公司樓下卻發現沒有空位，車數有時很極端，爆滿(全滿+一堆放旁邊用繩子綁著)，或是一台都沒，只能花費雙倍路程時間步行到上一站，搜尋可行的解決方案，別人製作的 Youbike 地圖是不錯的解決方案，但對壓線出門的懶人不是最佳解，重複的查詢、比較、紀錄相當多餘，真正能解決痛點的是固定時間、客製化、快速查詢工具。
 
 ## LineBot
 
-為快速查詢 youbike，以 Node.js+Express.js 開發的 bot，邏輯都在[index.js](https://github.com/chienniman/YouBikeNotify-Bot/blob/main/index.js)，幫Youbike使用者省下大筆時間，可參考附錄-0台Youbike。
+為快速查詢 youbike，以 Node.js+Express.js 開發的 bot，邏輯都在[index.js](https://github.com/chienniman/YouBikeNotify-Bot/blob/main/index.js)，幫 Youbike 使用者省下大筆時間，可參考附錄-0 台 Youbike。
 
 ## 特點
 
@@ -62,6 +69,7 @@ npm install
 ```
 mkdir .env
 ```
+
 Configuring Environment Variables & Secrets
 ![](/images/config.jpg)
 
@@ -123,12 +131,15 @@ https://datacenter.taichung.gov.tw/swagger/OpenData/9af00e84-473a-4f3d-99be-b875
 [ref-[Day-37] 使用 ngrok 讓外網連接你的 API](https://ithelp.ithome.com.tw/articles/10197345)
 
 ### 安裝
+
 [ngrok](https://ngrok.com/)
 
 ### 執行
-1.windows，雙擊exe
+
+1.windows，雙擊 exe
 
 2.linux， cd ngrok
+
 ```
 ngrok.exe http {port}
 ```
@@ -172,11 +183,8 @@ ngrok 運行 500，terminal 顯示 404，因為 token 沒設定好
 
 > 官方文件[nodejs-on-rende](https://github.com/haojiwu/line-bot-nodejs-on-render)<br>
 
-1.設定[render.yaml](https://github.com/chienniman/YouBikeNotify-Bot/blob/main/render.yaml)
-2.新增 Web Service
-3.Public Git repository
-4.設定姓名、環境、區域
-5.編譯部屬成功
+1.設定[render.yaml](https://github.com/chienniman/YouBikeNotify-Bot/blob/main/render.yaml) 2.新增 Web Service
+3.Public Git repository 4.設定姓名、環境、區域 5.編譯部屬成功
 ![deploy-success](https://user-images.githubusercontent.com/97031067/223740969-e16e8586-e53b-491b-9caf-0eee42233eaa.jpg)
 
 ## 免費使用限制
@@ -185,22 +193,17 @@ ngrok 運行 500，terminal 顯示 404，因為 token 沒設定好
 > Web Services on the free instance type are automatically spun down after 15 minutes of inactivity. When a new request for a free service comes in, Render spins it up again so it can process the request.
 > This can cause a response delay of up to 30 seconds for the first request that comes in after a period of inactivity.<br>
 
-1.本地伺服器可自動排程，但 render 雲的免費計畫不支援
-2.超過 15 分鐘沒有活動，伺服器會自動停止，直到新的請求，因此會造成延遲響應。
-3.總結以上 2 點，部署 render 版本只能算是半自動，15 分鐘前有請求，可觸發排程
+1.本地伺服器可自動排程，但 render 雲的免費計畫不支援 2.超過 15 分鐘沒有活動，伺服器會自動停止，直到新的請求，因此會造成延遲響應。 3.總結以上 2 點，部署 render 版本只能算是半自動，15 分鐘前有請求，可觸發排程
 
 ## 心得
 
 youbike 地圖要逐一輸入搜尋，記錄資訊就相當麻煩，還要考慮過期，總不能一直盯著地圖重整吧，linebot 點擊一次幾秒內就能解決(~~不過得先花好幾天研究 LINE SDK~~)，朋友試用後的反饋也是相當輕巧方便，得感謝 heroku 之後還有如此便利、不用綁卡的雲，缺點也是相當明顯，不穩定的響應時間(1 秒~6 分鐘)，注定讓免費計畫只能作為實驗用途，應該沒有使用者能接受超過 5 秒的等待，會不會升級成付費版本目前還在觀察中，考量到簡潔好用的整合介面，內建支持 Github，可能性應該偏高。
 
-## 附錄-0台Youbike
-2023/3/11，睡眼惺忪看到lineBot跳出起點0台，考量到其他站要花上10分鐘的步行時間，我果斷放棄改騎機車，到公司不信邪再查一次，還是0，感謝你lineBot人，我的超人。
+## 附錄-0 台 Youbike
+
+2023/3/11，睡眼惺忪看到 lineBot 跳出起點 0 台，考量到其他站要花上 10 分鐘的步行時間，我果斷放棄改騎機車，到公司不信邪再查一次，還是 0，感謝你 lineBot 人，我的超人。
 
 ## 附錄-悲慘~~搞笑~~故事
-前幾個禮拜朋友花了幾千開了一台性能不錯的機器，興高采烈的要架設(私服)遊戲伺服器，過度膨脹的他沒設密碼，沒過幾天時間就被各路神仙開腸剖肚，被木馬感染，打遊戲的時候發現很卡，覺得很奇怪去查了以後發現資源都被拿去幫大佬挖礦拉，雖說不知道是如何中毒的，但奉勸架伺服器一定要注意資安，不下載來路不明的檔案，很多玩家都喜歡用腳本自動掛機，放連招狂虐對面，風險其實很大。
-1.被檢舉鎖帳
-2.個資洩漏
-3.勒索、木馬、蠕蟲病毒
-4.版權法律問題
-在CSO蓋亞的連敲腳本中，曾經沙箱掃到木馬啟動器，免費的最貴，不要貪小便宜亂下載，得不償失。
 
+前幾個禮拜朋友花了幾千開了一台性能不錯的機器，興高采烈的要架設(私服)遊戲伺服器，過度膨脹的他沒設密碼，沒過幾天時間就被各路神仙開腸剖肚，被木馬感染，打遊戲的時候發現很卡，覺得很奇怪去查了以後發現資源都被拿去幫大佬挖礦拉，雖說不知道是如何中毒的，但奉勸架伺服器一定要注意資安，不下載來路不明的檔案，很多玩家都喜歡用腳本自動掛機，放連招狂虐對面，風險其實很大。 1.被檢舉鎖帳 2.個資洩漏 3.勒索、木馬、蠕蟲病毒 4.版權法律問題
+在 CSO 蓋亞的連敲腳本中，曾經沙箱掃到木馬啟動器，免費的最貴，不要貪小便宜亂下載，得不償失。
