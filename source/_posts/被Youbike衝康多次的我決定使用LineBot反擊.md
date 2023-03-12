@@ -26,7 +26,6 @@ keywords:
     - Youbike
     - render
 categories:
-    - Backend
     - LineBot
 ---
 
@@ -181,10 +180,13 @@ ngrok 運行 500，terminal 顯示 404，因為 token 沒設定好
 
 ## Deployment(render)
 
-> 官方文件[nodejs-on-rende](https://github.com/haojiwu/line-bot-nodejs-on-render)<br>
+> 官方文件[nodejs-on-rende](https://github.com/haojiwu/line-bot-nodejs-on-render)
 
-1.設定[render.yaml](https://github.com/chienniman/YouBikeNotify-Bot/blob/main/render.yaml) 2.新增 Web Service
-3.Public Git repository 4.設定姓名、環境、區域 5.編譯部屬成功
+1.設定[render.yaml](https://github.com/chienniman/YouBikeNotify-Bot/blob/main/render.yaml) 
+2.新增 Web Service
+3.Public Git repository 
+4.設定姓名、環境、區域 
+5.編譯部屬成功
 ![deploy-success](https://user-images.githubusercontent.com/97031067/223740969-e16e8586-e53b-491b-9caf-0eee42233eaa.jpg)
 
 ## 免費使用限制
