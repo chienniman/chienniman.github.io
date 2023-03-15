@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>生活中常見的密碼學</title>
+      <link href="/%E7%94%9F%E6%B4%BB%E4%B8%AD%E5%B8%B8%E8%A6%8B%E7%9A%84%E5%AF%86%E7%A2%BC%E5%AD%B8/"/>
+      <url>/%E7%94%9F%E6%B4%BB%E4%B8%AD%E5%B8%B8%E8%A6%8B%E7%9A%84%E5%AF%86%E7%A2%BC%E5%AD%B8/</url>
+      
+        <content type="html"><![CDATA[<h2 id="生活中常見的密碼學"><a href="#生活中常見的密碼學" class="headerlink" title="生活中常見的密碼學"></a>生活中常見的密碼學</h2><p>密碼學的發展與二戰密不可分。盟軍需要對德軍的通訊進行突破並獲取情報。德軍一直在使用 Enigma 機器加密通訊。Enigma 是經過改進的一種早期的加密機，能夠通過不斷地修改加密設置（rotor setting）和密鑰物理編排（plugboard）來生成不同的加密訊息，讓盟軍監聽員望洋興嘆。這使得德軍的通訊成為當時最安全的通訊之一。</p><p>但是，盟軍在戰爭中投入了各種人力和物力進行密碼破解，並最終成功了。尤其是 Alan Turing 和他的團隊設計的 Bombe 機器，在解密德軍通訊時扮演了重要角色，使盟軍能夠獲取關鍵情報，改變戰局，對德國戰爭努力做出了重要貢獻。這被認為是密碼學在二戰期間的頂峰之一，亦為現代密碼學奠定基礎。</p><p>由於密碼學在二戰中的重要作用，對密碼學的研究和發展取得了顯著的推進和進展。結合科技進步和密碼破解，在之後的歷史上，各國政府和軍隊都對密碼學進行了大力的研究和應用。<br><img src="/images/world-war-2.jpg"></p><h2 id="數位簽章"><a href="#數位簽章" class="headerlink" title="數位簽章"></a>數位簽章</h2><p>數位簽章（又稱公鑰數位簽章、電子簽章）是一種類似寫在紙上的簽名，但是使用了公鑰加密領域的技術實現，用於鑒別數位資訊的方法。在網路上，我們可以使用「數位簽章」來進行身分確認。數位簽章是一個獨一無二的數值，若公鑰能通過驗證，那我們就能確定對應的公鑰的正確性，數位簽章兼具這兩種雙重屬性：”可確認性”及”不可否認性（不需要筆跡專家驗證）”</p><h2 id="對稱式-Symmetric-key-cryptography"><a href="#對稱式-Symmetric-key-cryptography" class="headerlink" title="對稱式 Symmetric-key cryptography"></a>對稱式 Symmetric-key cryptography</h2><blockquote><p>這類演算法在加密和解密時使用相同的密鑰，或是使用兩個可以簡單地相互推算的密鑰。事實上，這組密鑰成為在兩個或多個成員間的共同祕密，以便維持專屬的通訊聯繫。與公開金鑰加密相比，要求雙方取得相同的密鑰是對稱密鑰加密的主要缺點之一。<br>常見的對稱加密演算法有 AES、ChaCha20、3DES、Salsa20、DES、Blowfish、IDEA、RC5、RC6、Camellia。<br>對稱加密的速度比公鑰加密快很多，在很多場合都需要對稱加密。<br><img src="/images/symmetric-key.jpg"></p></blockquote><h3 id="數據傳輸：HTTPS-協議"><a href="#數據傳輸：HTTPS-協議" class="headerlink" title="數據傳輸：HTTPS 協議"></a>數據傳輸：HTTPS 協議</h3><h3 id="數據存儲：資料庫中存儲的敏感信息"><a href="#數據存儲：資料庫中存儲的敏感信息" class="headerlink" title="數據存儲：資料庫中存儲的敏感信息"></a>數據存儲：資料庫中存儲的敏感信息</h3><h3 id="加密文件-加密-ZIP-文件。"><a href="#加密文件-加密-ZIP-文件。" class="headerlink" title="加密文件:加密 ZIP 文件。"></a>加密文件:加密 ZIP 文件。</h3><h3 id="身份驗證：身份驗證信息的安全性，例如使用對稱式加密對用戶密碼進行保護。"><a href="#身份驗證：身份驗證信息的安全性，例如使用對稱式加密對用戶密碼進行保護。" class="headerlink" title="身份驗證：身份驗證信息的安全性，例如使用對稱式加密對用戶密碼進行保護。"></a>身份驗證：身份驗證信息的安全性，例如使用對稱式加密對用戶密碼進行保護。</h3><h2 id="非對稱式"><a href="#非對稱式" class="headerlink" title="非對稱式"></a>非對稱式</h2><blockquote><p>它需要兩個金鑰，一個是公開密鑰，另一個是私有密鑰；公鑰用作加密，私鑰則用作解密。使用公鑰把明文加密後所得的密文，只能用相對應的私鑰才能解密並得到原本的明文，最初用來加密的公鑰不能用作解密。由於加密和解密需要兩個不同的密鑰，故被稱為非對稱加密；不同於加密和解密都使用同一個密鑰的對稱加密。公鑰可以公開，可任意向外發佈；私鑰不可以公開，必須由使用者自行嚴格秘密保管，絕不透過任何途徑向任何人提供，也不會透露給被信任的要通訊的另一方。<br><img src="/images/public-private.png"><br><a href="https://zh.wikipedia.org/zh-tw/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86">非對稱式密碼學</a></p></blockquote><p>1.數字簽名：非對稱加密可以用來生成數字簽名，這可以證明數據的完整性和真實性，並防止未經授權的更改或篡改。</p><p>2.安全傳輸：非對稱加密可以用於在網絡上安全地傳輸敏感數據，例如信用卡號、密碼和個人身份信息等。通過使用公鑰加密，只有持有相應私鑰的接收方才能解密數據。</p><p>3.VPN 連接：非對稱加密可以用於虛擬私人網絡（VPN）連接，以保護網絡傳輸的安全性和隱私。</p><p>4.電子郵件加密：非對稱加密可以用於加密和解密電子郵件，以保護郵件的機密性和隱私。</p><h2 id="Https-協議"><a href="#Https-協議" class="headerlink" title="Https 協議"></a>Https 協議</h2><p>1.通訊開始時，客戶端發送一個 HTTPS 請求給服務器，並且要求建立一個安全的通道。<br>服務器收到請求後，會將自己的公鑰以數字證書的形式發送給客戶端。</p><p>2.客戶端收到數字證書後，會使用內置的證書驗證機制驗證證書的合法性，如果證書有效，客戶端就可以使用服務器的公鑰來加密一個隨機產生的對稱密鑰（稱為“會話密鑰”）。</p><p>3.客戶端使用會話密鑰對要發送的數據進行對稱式加密，並發送給服務器。</p><p>4.服務器收到加密的數據後，使用自己的私鑰來解密，獲取會話密鑰，然後使用會話密鑰來對數據進行解密。</p><p>5.服務器使用會話密鑰對要發送的數據進行對稱式加密，並發送給客戶端。</p><p>6.客戶端收到加密的數據後，使用會話密鑰來對數據進行解密</p><p><img src="/images/https.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Information security </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cryptography </tag>
+            
+            <tag> Symmetric-key cryptography </tag>
+            
+            <tag> Public-key cryptography </tag>
+            
+            <tag> TLS </tag>
+            
+            <tag> SSL/TLS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>網頁打包壓縮的好用工具Parcel</title>
       <link href="/%E7%B6%B2%E9%A0%81%E6%89%93%E5%8C%85%E5%A3%93%E7%B8%AE%E7%9A%84%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7Parcel/"/>
       <url>/%E7%B6%B2%E9%A0%81%E6%89%93%E5%8C%85%E5%A3%93%E7%B8%AE%E7%9A%84%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7Parcel/</url>
@@ -23,31 +56,6 @@
             <tag> Frontend </tag>
             
             <tag> Parcel </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>努力無法戰勝天賦嗎</title>
-      <link href="/%E5%8A%AA%E5%8A%9B%E7%84%A1%E6%B3%95%E6%88%B0%E5%8B%9D%E5%A4%A9%E8%B3%A6%E5%97%8E/"/>
-      <url>/%E5%8A%AA%E5%8A%9B%E7%84%A1%E6%B3%95%E6%88%B0%E5%8B%9D%E5%A4%A9%E8%B3%A6%E5%97%8E/</url>
-      
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="23c456f08d696026857b5bd120d4fd8c5ee26bc82c3e62944274636c82c50bf4">10d79030e8222445804370796b90fca10883aa07f49471429a01156883ccaec1fb4698382a494a14209279dea91e87ebad262a87d18d99bdd13ed520e46cae8ca8d71038c96a12be9edfc8fcecf7e2596b339491447861ea140f165513a9e04b3a580eb5b84a741a5ee04a4d6756fed245cad9ae164a10c6c7bcca3543cfe0dbf137c88ba13309bf85a1659186e2878c37e7b9e7136d0deea8d615f5d7455ed6a87f97e3020ecaa6a310f121e7124f48effddce9edd6ea18640d85d962d6f180d25a6a87dc1dd09b9eadc6649419baad967c9be2e4e8fd3f26388176972bbc0ab8b1a56dd5fe3e1d8935c6f6dfb73b3ee05280de2e0bf2cbb9c32f8c5453a59c6529e50bc17f6e3afbae7cdd1430b0c9d6a25b2cff38fee7fe449451b165a6a445a5bf9241042e9642b86e1391e11d42edb9a74ed401a90b106fa962165133baf4c3ace5f57b773ca18179f0b003135d6217c726d116e57e34ab345a39293226aba57d3d1c8cf393bc0f0a2770379c9de6d767ffb5b15b7b9f33cbbfd87f8746e81b59a1e775374bc1c59e65582d2ee4ffccb9340f7fdea170f7856f5014b87b78f732e7af202407b66ca3ad6e2d921e4a227f3b5ee6797c3beeaf73bd7c43021232854cd3acb15ed4fb651b1cf525c433bcbf8f2e018ef8c036f8bb57f0a76cdb6e1ae32c21b7a61cdb9ce446b0834b2ece4eb0afefbc15c044fb8e29e60cf36e2c10fcc792227417a58b5cca9cf37e8c32927ee67e398c98b8019928c581f26ea315e2b7fcd9737875c8129af8872ba04efdcb9cb3b71fde21e36b750178449e6bdc36dd79edcfb5042b4bd5335326afeebe2b19efd1861cbe7d88306cff47df6cd53fffd0165ad398e87db326a2d10df553cacc6bea40f580f869c406e35b2b055c2885b3cbd22562356280a5de496c6a42c1b70de97b55985186a431c03b25c0fa6aa6345e44d92a9e3c7accc6e59ba97c80ccd38e11e0409831f7db1ccf1944df06ee2f2cc76f55cd9d06fd294c8404f6abbeb5d95f854d17af38bb78c39fbc2e02153ce28fc32076332736260e2284a6ba89e71f86403cf79aad6b8d732396f0dde9a6548f42a1e8cfe63b49bd271e3caec70b22b939052941c49af2ec00222d4aeeabfacf24592e2ae892f3256c1de355f90557d612df55d12f16da93f415f51cbacca529c1607ff4e017ec366e5c817e57da8b20796df3c2440da7dfba3a82a694884833556829c6984f8dabe218c0825398c0f98334e6535fe6421339990f2bf969941c1958217d226ae0e9e5fdd3c36a9893cfed0d6298131139f23bb61706956afe25b85406a429f794138bce9182e0fdd3865d1e58f3e6f6e488fdccfa56ef1018b635aefcccff974d9ba7202f029c9268782b9d31d804016acde954fc6babe81d1c88315b1f995f8047c36de59e0f37b23539cb1a5bfa81746b37a0605b1712f89989a104f61cca6fbce624d751029375d628afc047908b5232873aaba0f7134ea3d2801955720aa48c70bcdd6f60e419142799169b23199b8b0f9ab2cf3651a9b0f28d1bc353eb2016ecb58862fde37509cd26901e4eba31f2b63e3bd286bf75cc6497d390d2ed8c16236dfb7014b42f1d3e8988ce1f77006defc599ddbeec89650b6d5935cd1b237cdd9e7bed65c1423b978d2a09238be0ecee5dabfeccfafad2ec2e7ca62b110f85bc2243bdddd7f62c3db58282e54e929e37e44de05f8d68fea5fa1484a3ff50103a1c1f53480b6571c7f74043b48fed79fd21f14ee5c6b797f17f8f961578493c90fa37ae591c894dcaedfd04e41f6c5f0fe0a83e9ac7f3779d2f4986cf7dfa39d3a397b814c82ec764cbe41e382b5e20a4d26d045a4cf62a92ca318cde1d26697324b26e35b58dd4c59c9a4391e897a92a046b6f476e12757f88fbb6c15ca85254f1b0b855204d341f18328e4d0e664a682092db96439dc0bfbc69c3b98b4fea8928c3e80757dd81a9e9acd2d6a7565aa61cb3aa0e66675fd6d71ea793e11e81f5dcdb4b7ab9122e1cfb4212add4d717cb1959f452b151be25c2f3ada8c44ad80e89aeb1d7700d218f28f67cdb870a2b462cb59852dd91df5881e78cab2c1ce96d1a9b75917263c382761423f338efa97a247ad78feaabefa5bd9b35b1d1304dc8577d13a0f990a7710d92e9f7b8831a988d33df27b4602c456f5b9495240dd387dc6a45c20b0907ea5e1ee60fda642a09a467e743078e2a96fd3d4f0f9352eab7e603071b8ab11a08e0ef4f7f1d497696275daafead03e43c55bf8e42303c46cd566f554fdea8ea6a36b09f2e26122df089a40a1b8564069fe1288fb151a193c559171b3aaece83c9c4a235577730d4185d56fd18225921b67d1bec8d992968a59d4b5cd87b7506337a0f0f716ac9c92fa3b4c40cc597a8892d8ca58163c559f20aca5265a539883e78db30e3733a7fc7057950af82b1638f3627d11c8a7cacc1bf7187fba27221cac7490b63f5fe502f3fa9d432676aae7426f70e972643f2efb06b0d625edd9902272f82eb75f86345598b00dcf0058ad67c289d07b82f202b79a9c535a0750f638fedbc8408ef196781c5070525b3bbefc3eb22d3c94544786822d3d2e0229bd3d66677fd94d05b895fb1728147779a954edda4b4394179b11fa9925e97a423f41aa2be2b502496f20697c6bab65b02897968aa309e4a2cff6accb67fc712bdbe0fdc2a8106ac5be2fb4d86f9dbe76bb0fed9b2574e2265e381697aaa95a8e69bb5c4ce3b797d90316d1fcc6981f8e2ef6bd286ec2731cfcff1e7c190b9597f7821cfd16d7242abda0ac75430beda5af52f34eaefbaec187f10740eb191c1df836bd17f3d4d56d8b8bf48c4e235dd04498a2c192d23485e6e8221793453a4727eb6a8b8fa7cc82e553c5cd4b8672135618fd58862104c1b59d1207a2b5b239829996eedef502c406e6789200912939573f7c7b6e07b88862034087bb1637f3b4d141548cfea91456f74bff0b017b9c1fce16ccd22ec3cda94bb68577864b548f2699940a179fbcbef52accd181766ac60d6c96ad17a8a25ddb2cfb5976a5d9da0e80f7cae294b117297ee2772633f70f00224d5425241308fee4f43788aea97a27bd819ebfa2d0229679d9a90d6b6a03d2723e8fe14c40c46e98918b91b384eeb8cc241b5234df0d9ce1699a9bfcb9645854e5a91a763fe51a3fe67bd46f2ecfdd203ab5d3f71672e519317af13367f1b163b42a0d51fa950ca424140d43c97ed28f447aec543c6f865f030a94a39be681dc80fdd0b2bbaab40037a3685b4b0b61621ba8cb652ace3fb23b47ac624be293b22266bb202bbd8a81f773992ee222f1e98e3d081dbb4132b0bb96dd3cb0e9c3822976238dc9714c0b01ca1dec16d17363bac638e334030338f38c80c39541d002f7c0ed10e80f6ad832ece274b7f22eef7a4eda0fc5a64b6607cd8aceee1706659546bacdf689224c201c5dd23bc3b469b204ce6dc19cf4ab310c1a7ad9541ea93f7dd9fa96ebee480b5b2c60aec2a49e83b1c088137691398433fb49f81449f738f2bac3c59747e15f83e24adc86725bf3ac62462a72d61b5d7ce2010ef760bcd08263ff6a5aca9d5db2dfd35c0e2ebab805de73f2fa8eb036aa637d45af9f9f35ad58dc1c1d43482c8a73d42fb24f46232306df7417848cfbfc32fd4d7426b412a90b40e3f</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">這是一篇加密文章，請連絡站長取得密碼</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      <categories>
-          
-          <category> Diary </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> diary </tag>
             
         </tags>
       
