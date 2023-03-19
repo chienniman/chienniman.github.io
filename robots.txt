@@ -7,5 +7,5 @@ Disallow: /vendors/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
-Sitemap: https://chienniman.github.io/sitemap.xml
+Sitemap: https://chienniman-devlogs.onrender.com/sitemap.xml
 
