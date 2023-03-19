@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://chienniman-devlogs.onrender.com/loaderio-139046974c25002130cea64d250f7579.html</loc>
-    
-    <lastmod>2023-03-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://chienniman-devlogs.onrender.com/%E9%A3%9F%E5%93%81%E6%9F%B5%E6%AC%84%E6%8A%80%E8%A1%93%E7%9C%8B%E7%B6%B2%E9%A0%81%E8%B3%87%E5%AE%89/</loc>
     
     <lastmod>2023-03-18</lastmod>
@@ -146,27 +137,6 @@
 
   
   <url>
-    <loc>https://chienniman-devlogs.onrender.com/tags/Frontend/</loc>
-    <lastmod>2023-03-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://chienniman-devlogs.onrender.com/tags/React-js/</loc>
-    <lastmod>2023-03-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://chienniman-devlogs.onrender.com/tags/Mantine/</loc>
-    <lastmod>2023-03-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://chienniman-devlogs.onrender.com/tags/Backend/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -209,6 +179,27 @@
   </url>
   
   <url>
+    <loc>https://chienniman-devlogs.onrender.com/tags/Frontend/</loc>
+    <lastmod>2023-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chienniman-devlogs.onrender.com/tags/React-js/</loc>
+    <lastmod>2023-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chienniman-devlogs.onrender.com/tags/Mantine/</loc>
+    <lastmod>2023-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://chienniman-devlogs.onrender.com/tags/Laravel/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -244,6 +235,13 @@
   </url>
   
   <url>
+    <loc>https://chienniman-devlogs.onrender.com/tags/AZ-900/</loc>
+    <lastmod>2023-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://chienniman-devlogs.onrender.com/tags/Iframe/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -251,7 +249,7 @@
   </url>
   
   <url>
-    <loc>https://chienniman-devlogs.onrender.com/tags/AZ-900/</loc>
+    <loc>https://chienniman-devlogs.onrender.com/tags/Parcel/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -287,13 +285,6 @@
   
   <url>
     <loc>https://chienniman-devlogs.onrender.com/tags/SSL-TLS/</loc>
-    <lastmod>2023-03-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://chienniman-devlogs.onrender.com/tags/Parcel/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -379,14 +370,14 @@
 
   
   <url>
-    <loc>https://chienniman-devlogs.onrender.com/categories/Frontend/</loc>
+    <loc>https://chienniman-devlogs.onrender.com/categories/Backend/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://chienniman-devlogs.onrender.com/categories/Backend/</loc>
+    <loc>https://chienniman-devlogs.onrender.com/categories/Frontend/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
