@@ -4,7 +4,7 @@ const axios = require('axios');
 describe('Website performance test', () => {
   jest.setTimeout(10000);
 
-  test('Website loads in under 2 seconds', async () => {
+  test('Website_loads_in_under_2_seconds', async () => {
     const start = performance.now();
 
     const response = await axios.get('https://chienniman-devlogs.onrender.com/');

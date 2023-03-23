@@ -8,7 +8,7 @@
         "deploy": "hexo deploy",
         "server": "hexo server",
         "build-local": "npm run clean && npm run build && npm run server",
-        "test": "jest"
+        "test": "jest --coverage"
     },
     "hexo": {
         "version": "6.3.0"
