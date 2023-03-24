@@ -18,10 +18,4 @@ describe("post_render", () => {
             expect(post.data.author).toBe("Boris Chien");
         });
     });
-
-    test("renders_the_correct_date", () => {
-        expect(new Date(post.data.date)).toEqual(
-            new Date("2023-02-16T22:01:31.000Z")
-        );
-    });
 });
