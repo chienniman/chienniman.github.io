@@ -26,7 +26,6 @@ date: 2023-04-01 19:25:34
 ---
 
 Monica 是一個開源專案，用於組織和記錄與親人的互動。又稱 PRM，個人關係管理。可將其視為您朋友或家人的 CRM，本文會介紹感興趣的功能，API、數據導出、OAuth、以及 issue。
-
 > Monica’s vision is to help people have more meaningful relationships.
 
 幫助人們建立有意義的關係
@@ -37,14 +36,12 @@ Monica 是一個開源專案，用於組織和記錄與親人的互動。又稱 
 本文會介紹API授權(個人使用、開放授權)，數據導出、社群討論issue，也會同時附上以上功能的原始碼分析，深入淺出的介紹設計模式在本專案的應用。
 
 ## 執行&部署環境
-
 ```
 PHP 8.1+
 HTTP server with PHP support (eg: Apache, Nginx, Caddy)
 Composer
 MySQL
 ```
-
 ```
 Platform.sh
 Heroku
@@ -53,63 +50,65 @@ Heroku
 值得注意的是，官方文件提到，構建專案程式需要 1.5GB RAM 以上，在 GCP 開便宜的 n1-standard-1，每月最少也要 600 台幣，用官方託管版本，只要 270NT/每月。
 
 ## Authentication
-
 在 Monica 中，OAuth 2.0 與個人訪問令牌是兩種不同的身份驗證機制，但它們都用於授權 API 訪問。
-
 OAuth 2.0 是一種標準的開放授權協議，允許用戶在 Monica 上授權第三方應用程序訪問數據，不需要將用戶名和密碼提供給該應用程序。當用戶通過 OAuth 2.0 授權授權應用程序時，該應用程序會收到一個訪問令牌，以便它可以代表用戶訪問 Monica API。
-
 個人訪問令牌則是一種基於 Monica 賬戶的令牌，允許應用程序代表用戶訪問 Monica API。這意味著，當用戶提供他們的個人訪問令牌給應用程序時，該應用程序就可以代表該用戶訪問 API，就像它擁有 OAuth 2.0 訪問令牌一樣。
-
 雖然這兩種令牌都可以用於授權 API 訪問，但它們的使用方式略有不同。 OAuth 2.0 是一種標準的開放授權協議，允許用戶授權第三方應用程序訪問其數據。個人訪問令牌則是一種在 Monica 內部生成的令牌，只能由用戶本人使用。在大多數情況下，建議使用 OAuth 2.0，因為它是更安全和更靈活的身份驗證協議。
 
 ## 個人驗證授權
 
+### API
 ```
 curl -H "Authorization: Bearer Personal access token" https://app.monicahq.com/api
 ```
-
-在管理後台生成個人驗證令牌
+### 個人驗證令牌(personal-access-token)
 ![](/images/monica-personal-access-token.jpg)
-將 token 放在 postmon 的 Authorization 後，成功訪問 contacts
+將 token 放在 postmon 的 Authorization 
+
+### 測試請求 
 ![](/images/postman-monica.jpg)
 
-## 開放授權
-
+## 開放授權(OAuth)
 monica 也提供 OAuth 方式驗證 API，向伺服器發起驗證請求，跳出授權允許視窗，取得 Access Token，之後請求夾帶令牌訪問保護資源
+
+### 流程
 ![](/images/oauth-process.jpg)
-配置 postmon 參數，將 Callback URL 填入 monica 後台 API，Token name、Client ID、Client Secret 填入 postmon
+
+### Postmon
 ![](/images/postmon-oauth.jpg)
-postmon 會跳出授權請求，允許後核發 Access Token、Refresh Token，點擊使用後自動帶入 Authorization Token 欄位
+配置 postmon 參數，將 Callback URL 填入 monica 後台 API，Token name、Client ID、Client Secret 填入 postmon
+
+### 授權請求
 ![](/images/postmon-oauth-popup.jpg)
-測試請求 Contacts，成功
+postmon 會跳出授權請求，允許後核發 Access Token、Refresh Token，點擊使用後自動帶入 Authorization Token 欄位
+
+### 測試請求 
 ![](/images/postmon-oauth-success.jpg)
 [The OAuth 2.0 Authorization Framework: Bearer Token Usage](https://datatracker.ietf.org/doc/html/rfc6750)
 [monica-api 文件](https://www.monicahq.com/api)
 
 ## 第三方登入
-
 官方託管 monica 支持 OAuth API，卻不支持 Facebook、Google 第三方登入，主流的平台為提升用戶體驗，通常會支持，疑惑地查找社群討論發現
 ![](/images/issue-558.jpg)
-
 degan6 提出 OAuth 登入的 pull request，但被主要開發者拒絕了
 ![](/images/deny-issue.jpg)
-
 1.不想要支持有疑慮的第三方登入(Facebook 疑似洩漏個資事件)<br> 2.官方託管已經移除大多數的追蹤程式碼
 
 ## 數據導出
-
 monica 能輸出聯絡人vCard，使用者Sql、Json 等，相當便利，數據輸出需較長時間處理，隊列任務被存儲在數據庫，在多個請求之間共享任務。當任務被添加到隊列，被插入到表中，等待被執行。Laravel會跟蹤任務的狀態，未處理、處理中、已處理、失敗。
 Laravel預設使用同步隊列(sync)，保證實時、穩定性，方便進行開發與測試，但對於大量、耗時任務，同步處理會阻塞主線程，因此不適合高併發場景。
 
 ## vCard
-
+![](/images/monica-vcard.jpg)
 vCard 是電子名片的文件格式標準。它一般附加在電子郵件之後，但也可以用於其它場合（如在網際網路上相互交換）。vCard 可包含的信息有：姓名、地址資訊、電話號碼、URL，logo，相片等。
 
+### Routes
 {% codeblock lang:php %}
 // monica/routes/web.php 
 Route::get('/people/{contact}/vcard', 'ContactsController@vcard')->name('vcard');
 {% endcodeblock %}
 
+### ContactsController
 {% codeblock lang:php %}
 // monica/app/Http/Controllers/ContactsController.php
 // 依賴注入：Contact、ExportVCard、Str和LocaleHelper通過依賴注入。
@@ -136,25 +135,19 @@ public function vCard(Contact $contact)
 
 ## Sql & Json
 
+### 資料導出介面
 ![](/images/monica-export-data.jpg)
 
+### Routes
 {% codeblock lang:php %}
 // monica/routes/web.php 
 Route::post('/settings/exportToSql', 'Settings\\ExportController@storeSQL')->name('export.store.sql');
 Route::post('/settings/exportToJson', 'Settings\\ExportController@storeJson')->name('export.store.json');
 {% endcodeblock %}
 
+### ExportJob
 {% codeblock lang:php %}
 // monica/app/Models/Account/ExportJob.php 
-// 物件關聯對應模型
-// 依照不同的設計，可使用的設計模式
-// 映射模式（Mapping Pattern）：用於將關係數據庫映射到物件對像模型的模式；
-// 工廠模式（Factory Pattern）：用於創建模型對象；
-// 單例模式（Singleton Pattern）：確保 ORM 實例的唯一性；
-// 註冊模式（Registry Pattern）：用於存儲和獲取 ORM 實例；
-// 代理模式（Proxy Pattern）：用於處理關聯關係的延遲加載；
-// 裝飾器模式（Decorator Pattern）：用於為模型對象添加額外的功能；
-// 觀察者模式（Observer Pattern）：用於監聽模型對象的事件
 namespace App\Models\Account;
 
 use App\Traits\HasUuid;
@@ -213,17 +206,28 @@ class ExportJob extends Model
         $this->save();
     }
 
+    // 發信通知
     public function end(): void
     {
         $this->status = self::EXPORT_DONE;
         $this->ended_at = now();
         $this->save();
-
+    
         $this->user->notify(new ExportAccountDone($this));
     }
 }
 {% endcodeblock %}
 
+### 設計模式
+映射模式（Mapping Pattern）：用於將關係數據庫映射到物件對像模型的模式；
+工廠模式（Factory Pattern）：用於創建模型對象；
+單例模式（Singleton Pattern）：確保 ORM 實例的唯一性；
+註冊模式（Registry Pattern）：用於存儲和獲取 ORM 實例；
+代理模式（Proxy Pattern）：用於處理關聯關係的延遲加載；
+裝飾器模式（Decorator Pattern）：用於為模型對象添加額外的功能；
+觀察者模式（Observer Pattern）：用於監聽模型對象的事件
+
+### ExportController
 {% codeblock lang:php %}
 // monica/app/Http/Controllers/Settings/ExportController.php
 private function newExport(string $type): ExportJob
@@ -275,19 +279,22 @@ public function storeJson()
 }
 {% endcodeblock %}
 
+### Dispatch
+* PHP 5.6 引入的可變參數 (variable-length argument lists) 功能。
+* 允許在函數或方法的參數中接收任意數量的參數。
+* 建立一個新的當前物件 (new static)，再將其他可能存在的參數也加入建構子的參數中，
+* 最後將整個建構子的參數傳遞給一個 PendingDispatch 物件建立，最終回傳該物件
+* 靜態工廠方法的變形
+
 {% codeblock lang:php %}
 // framework/src/Illuminate/Foundation/Bus/Dispatchable.php 
-// PHP 5.6 引入的可變參數 (variable-length argument lists) 功能。
-// 允許在函數或方法的參數中接收任意數量的參數。
-// 建立一個新的當前物件 (new static)，再將其他可能存在的參數也加入建構子的參數中，
-// 最後將整個建構子的參數傳遞給一個 PendingDispatch 物件建立，最終回傳該物件
-// 靜態工廠方法的變形
 public static function dispatch(...$arguments)
 {
     return new PendingDispatch(new static(...$arguments));
 }
 {% endcodeblock %}
 
+### PendingDispatch
 {% codeblock lang:php %}
 // framework/src/Illuminate/Foundation/Bus/PendingDispatch.php 
 // 提供了一個額外的介面，讓使用者可以更方便地調用 Job 物件的方法。同時，在物件的銷毀時刻，
@@ -404,5 +411,68 @@ class PendingDispatch
             app(Dispatcher::class)->dispatch($this->job);
         }
     }
+}
+{% endcodeblock %}
+
+### 成功通知
+![](/images/monica-export-email.jpg)
+
+### 發信notify
+{% codeblock lang:php %}
+// monica/app/Models/Account/ExportJob.php 
+public function end(): void
+{
+    $this->status = self::EXPORT_DONE;
+    $this->ended_at = now();
+    $this->save();
+
+    $this->user->notify(new ExportAccountDone($this));
+}
+{% endcodeblock %}
+
+### ExportAccountDone
+{% codeblock lang:php %}
+// monica/app/Notifications/ExportAccountDone.php 
+public function toMail(User $user): MailMessage
+{
+    $date = Carbon::parse($this->exportJob->created_at)
+        ->setTimezone($user->timezone);
+    // 成功、主題、歡迎詞、描述、下載連結
+    return (new MailMessage)
+        ->success()
+        ->subject(trans('mail.export_title'))
+        ->greeting(trans('mail.greetings', ['username' => $user->first_name]))
+        ->line(trans('mail.export_description', ['date' => DateHelper::getShortDate($date)]))
+        ->action(trans('mail.export_download'), route('settings.export.index'));
+}
+{% endcodeblock %}
+
+### 下載資源
+{% codeblock lang:php %}
+// monica/app/Http/Controllers/Settings/ExportController.php 
+public function download(Request $request, string $uuid)
+{
+    // 查詢第一筆紀錄
+    $job = ExportJob::where([
+        'account_id' => auth()->user()->account_id,
+        'user_id' => auth()->user()->id,
+        'uuid' => $uuid,
+    ])->firstOrFail();
+
+    // 未完成
+    if ($job->status !== ExportJob::EXPORT_DONE) {
+        return redirect()->route('settings.export.index')
+            ->withErrors(trans('settings.export_not_done'));
+    }
+    $disk = StorageHelper::disk($job->location);
+
+    // 返回請求資料
+    return $disk->response($job->filename,
+            "monica.{$job->type}",
+            [
+                'Content-Type' => "application/{$job->type}; charset=utf-8",
+                'Content-Disposition' => "attachment; filename=monica.{$job->type}",
+            ]
+        );
 }
 {% endcodeblock %}

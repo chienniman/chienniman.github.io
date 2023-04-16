@@ -1,5 +1,5 @@
 ---
-title: 技術債真的是萬惡之源嗎
+title: Laravel進階與優化
 abbrlink: 52036
 date: 2023-03-01 23:10:29
 tags:
@@ -11,7 +11,7 @@ tags:
   - 優化
 cover: /images/laravel.jpg
 author: Boris Chien
-description: 在軟體開發中，技術債是指為了快速完成開發而採用的簡單、快速但不完美的解決方案所產生的成本。這些解決方案通常需要進行修復或更新，維護和提高應用程式的品質和可擴展性。本文介紹Laravel後端API優化，進階功能Collection、Cache、Broadcasting，開發紀錄，範例均為開發中真實遇到，將變數與演算法重構，請讀者放心觀看。
+description: Laravel後端API優化，進階功能Collection、Cache、Broadcasting，開發紀錄，範例均為開發中真實遇到
 keywords:
   - Backend
   - 後端數據
@@ -20,17 +20,11 @@ keywords:
   - Cache
   - Broadcasting
   - API
-  - 技術債
   - refactor
-  - 優化
   - Pusher Channels
 categories:
     - Backend
 ---
-
-## 技術債
-在軟體開發中，技術債是指為了快速完成開發而採用的簡單、快速但不完美的解決方案所產生的成本。這些解決方案通常需要進行修復或更新，維護和提高應用程式的品質和可擴展性。
-本文介紹Laravel後端API優化，進階功能Collection、Cache、Broadcasting，開發紀錄，範例均為開發中真實遇到。
 
 ## Collection-優雅地包裝
 > The Illuminate\Support\Collection class provides a fluent, convenient wrapper for working with arrays of data. For example, check out the following code. We'll use the collect helper to create a new collection instance from the array, run the strtoupper function on each element, and then remove all empty elements:
@@ -38,7 +32,7 @@ categories:
 提供了一個流暢、方便的包裝器來處理數據陣列。
 [Collections更多介紹](https://laravel.com/docs/10.x/collections#creating-collections)
 
-### 技術債-驗證訪問token
+### 驗證訪問token
 {% codeblock lang:php %}
 public function validateAccessToken(Request $request)
 {
@@ -55,17 +49,12 @@ public function validateAccessToken(Request $request)
 }
 {% endcodeblock %}
 
-### 優點
-1.可讀性較高，易於理解。
-2.原生PHP方法，簡單快速
-3.程式碼邏輯耦合高
-
 ### 缺點
 1.API::getAccessTokens()可能會導致性能問題、未知錯誤。
 2.Access Token 數據大時，遍歷效率低。
-3.暴露實做細節
 
-### 優化-抽象地操作
+
+### 抽象地
 {% codeblock lang:php %}
 public function validateAccessToken(Request $request)
 {
@@ -77,12 +66,8 @@ public function validateAccessToken(Request $request)
 }
 {% endcodeblock %}
 ### 優點
-1.鍊式調用，更短、簡潔，Collection提高可讀性。
-2.提高演算法效率。
-3.抽象，隱藏細節。
+鍊式調用，更短、簡潔，Collection提高可讀性。
 
-### 缺點
-1.上手難度，開發成本高
 
 ## Cache-緩存你的數據
 > Some of the data retrieval or processing tasks performed by your application could be CPU intensive or take several seconds to complete. When this is the case, it is common to cache the retrieved data for a time so it can be retrieved quickly on subsequent requests for the same data. The cached data is usually stored in a very fast data store such as Memcached or Redis.
@@ -103,9 +88,6 @@ Thankfully, Laravel provides an expressive, unified API for various cache backen
     }
 {% endcodeblock %}
 
-### 優點
-簡單快速
-
 ### 缺點
 消耗伺服器查詢資源，token不需頻繁更新
 
@@ -123,15 +105,13 @@ Thankfully, Laravel provides an expressive, unified API for various cache backen
 1.提高程式效能，減少對資料庫的查詢。
 2.資料存儲在快取中，後續請求中快速地獲取。
 
-### 缺點
-一致性、同步更新問題
 
 ## Broadcasting-網頁即時更新的最佳選擇
 > In many modern web applications, WebSockets are used to implement realtime, live-updating user interfaces. When some data is updated on the server, a message is typically sent over a WebSocket connection to be handled by the client. WebSockets provide a more efficient alternative to continually polling your application's server for data changes that should be reflected in your UI.
 
 WebSockets就像一條繩子，連接客戶端與伺服器，雙方的訊息透過這條雙向管道即時更新，比起傳統的輪詢有更高的效能，消耗更少的資源，而Laravel有Pusher Channels與laravel-websockets。
 
-### 技術債-輪詢
+### 輪詢
 {% codeblock lang:js %}
 function poll() {
   fetch('/api/data')
@@ -142,24 +122,15 @@ function poll() {
     .catch(error => {
       console.error(error);
     })
-    .finally(() => {
-      setTimeout(poll, 1000);
-    });
 }
 poll();
 {% endcodeblock %}
-### 優點
-1.簡單、直觀。
-2.兼容性高
-3.可確保使用者成功接收到訊息
-4.可控制網路流量
 
 ### 缺點
 1.伺服器負擔大(可理解成固定DDOS)
 2.延遲高
 3.性能差
 
-### 優化-Broadcasting
 #### Pusher Channels
 透過訂閱事件即時更新
 {% codeblock lang:php %}
@@ -194,11 +165,6 @@ Pusher 三種不同頻道：
 2.適合多用戶
 3.延遲低
 
-### 缺點
-1.網路斷線、阻塞可能性
-2.無法得知用戶是否收到
-3.舊瀏覽器不兼容websocket
-
 [laravel-websockets文件](https://beyondco.de/docs/laravel-websockets/getting-started/introduction)
 [官方聊天室範例](https://github.com/beyondcode/laravel-websockets-demo)
 
@@ -206,9 +172,5 @@ Pusher 三種不同頻道：
 連結如下，供參考
 [網頁即時更新](https://hackmd.io/@monkeymonkey/Sk-odiP8o)
 
-## 技術債真的是萬惡之源嗎?
-不難看出，"蓄意留下"的技術債簡單快速、兼容性高，瓶頸容易出現在效能、擴展、維護性，正規開發，優雅抽象，
-符合SOLID的最佳實踐，但前期開發成本高，快速迭代過程容易失去優勢。
-開發人員在妥善溝通、規劃下，因開發時程限制所留下的技術債，是可以接受，筆者自身不輕易留下技術債，
-因為後期需要花費更多成本維護，特定業務場景，例如產品原型展示，Quick but dirty，有不可取代的優勢，這兩者並無明顯好壞，總結來說，Done is better than perfect或是Strive for excellence需開發者依自身經驗決定。
+
 

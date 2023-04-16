@@ -1,5 +1,5 @@
 ---
-title: 被Youbike衝康過的我決定使用LineBot反擊
+title: 製作一個Youbike LineBot
 tags:
     - Backend
     - LineBot
@@ -26,7 +26,7 @@ keywords:
     - Youbike
     - render
 categories:
-    - LineBot
+    - Line API
 ---
 
 ## 關於騎腳踏車上班
