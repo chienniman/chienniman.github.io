@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Chienniman's Blogs 
-subtitle: 網頁前後端開發、LineBot，生活記錄。
-description: 專注於網頁前後端開發、LineBot，以解決現實世界問題為主軸，包含個人成就、隨筆、作品集，文章風格乾淨，深入淺出。
+title: Chienniman's Blogs
+subtitle: 網頁前後端開發、LineAPI，生活記錄。
+description: 專注於網頁前後端開發、LineAPI，以解決現實世界問題為主軸，包含個人成就、隨筆、作品集，文章風格乾淨，深入淺出。
 keywords: Chienniman's Blogs
 author: Boris Chien
 language: zh-TW
@@ -48,7 +48,7 @@ highlight:
     auto_detect: false
     line_number: true
     line_threshold: 0
-    tab_replace: '  '
+    tab_replace: "  "
     exclude_languages:
         - example
     wrap: true
@@ -133,24 +133,24 @@ live2d:
 #Sitemap
 sitemap:
     path: sitemap.xml
-    
+
 markdown:
-  plugins:
-    - markdown-it-abbr
-    - markdown-it-container
-    - markdown-it-deflist
-    - markdown-it-emoji
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-mark
-    - markdown-it-sub
-    - markdown-it-sup
-    - markdown-it-task-checkbox
-    - markdown-it-plus
-    
+    plugins:
+        - markdown-it-abbr
+        - markdown-it-container
+        - markdown-it-deflist
+        - markdown-it-emoji
+        - markdown-it-footnote
+        - markdown-it-ins
+        - markdown-it-mark
+        - markdown-it-sub
+        - markdown-it-sup
+        - markdown-it-task-checkbox
+        - markdown-it-plus
+
 nofollow:
-  enable: true
-  field: site
+    enable: true
+    field: site
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
