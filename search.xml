@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>Line-login</title>
+      <link href="/Line-login/"/>
+      <url>/Line-login/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Line-login"><a href="#Line-login" class="headerlink" title="Line login"></a>Line login</h2><p>LINE Login 是一種快速登錄服務，將 LINE Login 集成到網站或應用程序中，用戶能輕鬆地註冊和登錄。<br>使用者只需點擊 LINE 登錄按鈕，無需記住每個站點的電子郵件地址和密碼。</p><h2 id="優勢"><a href="#優勢" class="headerlink" title="優勢"></a>優勢</h2><ul><li>廣大的用戶數量</li><li>建立帳號變得更加容易</li><li>個人化</li></ul><h3 id="流程圖"><a href="#流程圖" class="headerlink" title="流程圖"></a>流程圖</h3><p><img src="/images/web-login-flow.jpg"></p><h2 id="授權請求-API"><a href="#授權請求-API" class="headerlink" title="授權請求 API"></a>授權請求 API</h2><p>Authenticating users and making authorization requests</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://access.line.me/oauth2/v2.1/authorize</span><br></pre></td></tr></table></figure><h2 id="必須參數"><a href="#必須參數" class="headerlink" title="必須參數"></a>必須參數</h2><p>1.response_type，回應授權碼<br>2.client_id，LINE Login Channel ID，在 Providers Basic settings<br>3.redirect_uri，重新導向網址，需配置<br>4.state，防跨站偽造請求，隨機值<br>5.scope，權限範圍，user ID、name、Profileimage、Email</p><h2 id="選填參數"><a href="#選填參數" class="headerlink" title="選填參數"></a>選填參數</h2><p>1.nonce，防止重複攻擊，ID token 回傳值<br>2.prompt，再次確認是否授權<br>3.max_age，授權時間</p><p>其餘參考<a href="https://developers.line.biz/en/docs/line-login/integrate-line-login/#create-a-channel">Integrating LINE Login with your web app</a></p><h2 id="Postmon"><a href="#Postmon" class="headerlink" title="Postmon"></a>Postmon</h2><p>在 Postmon 選擇 Oauth2.0，填入參數，並將 Callback url 配置到 Line 設定中<br><img src="/images/postmon-line-oauth-login.png"></p><h2 id="Line-popup"><a href="#Line-popup" class="headerlink" title="Line popup"></a>Line popup</h2><p>跳出授權頁面<br><img src="/images/postmon-line-oauth-popup1.png"><br>確認存取權限<br><img src="/images/postmon-line-oauth-popup2.jpg"><br>取得 Access Token，id_token<br><img src="/images/postmon-line-oauth-result.png"></p><h2 id="JWT"><a href="#JWT" class="headerlink" title="JWT"></a>JWT</h2><p>全名是 JSON Web Token，在不同系統之間傳遞安全性資訊的開放標準。JWT 通常用於認證和授權方面，例如當使用者進行登入時，系統會建立一個 JWT，並將其傳遞給客戶端，之後客戶端每次向伺服器發送請求時都會攜帶這個 JWT，以證明其身份和權限。</p><h2 id="組成"><a href="#組成" class="headerlink" title="組成"></a>組成</h2><p>1.header<br>2.payload<br>3.signature</p><h2 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h2><p>alg：對 JWT 進行簽章或解密的演算法</p><h2 id="Payload"><a href="#Payload" class="headerlink" title="Payload"></a>Payload</h2><p>sub：subject，用字串或 URI 表示 JWT 夾帶的唯一識別訊息。<br>aud：audience，字串、URI 陣列表示這個 JWT 唯一識別的預期接收者。<br>exp：expiration，過期時間<br>name:用戶名稱<br>picture:用戶照片</p><h2 id="Signature"><a href="#Signature" class="headerlink" title="Signature"></a>Signature</h2><p>HS256、RS256、ES256</p><p>header 和 payload 為 JSON 物件經過 Base64 編碼，signature 為 private key 對編碼後的 header +payload 經過演算法完成簽章，再將簽章用 Base64 編碼後。</p><p><img src="/images/jwt-io-line-result.png"></p><h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><p><a href="https://developers.line.biz/zh-hant/services/line-login/">LINE Login v2.1</a><br><a href="https://lineapiusecase.com/en/api/login.html">LINE API Use Case</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Line API </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Authorization </tag>
+            
+            <tag> Line API </tag>
+            
+            <tag> Line login </tag>
+            
+            <tag> OAuth </tag>
+            
+            <tag> API </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>論家教這行業</title>
       <link href="/%E8%AB%96%E5%AE%B6%E6%95%99%E9%80%99%E8%A1%8C%E6%A5%AD/"/>
       <url>/%E8%AB%96%E5%AE%B6%E6%95%99%E9%80%99%E8%A1%8C%E6%A5%AD/</url>
@@ -41,15 +74,15 @@
             
             <tag> Backend </tag>
             
-            <tag> Laravel </tag>
-            
             <tag> Authentication </tag>
             
             <tag> Authorization </tag>
             
-            <tag> API </tag>
+            <tag> Laravel </tag>
             
             <tag> OAuth </tag>
+            
+            <tag> API </tag>
             
             <tag> Design pattern </tag>
             
@@ -266,15 +299,13 @@
             
             <tag> Backend </tag>
             
-            <tag> Express.js </tag>
+            <tag> Line API </tag>
             
             <tag> LineBot </tag>
             
             <tag> Webhook </tag>
             
             <tag> ngrok </tag>
-            
-            <tag> LINE Developers </tag>
             
             <tag> Youbike API </tag>
             
