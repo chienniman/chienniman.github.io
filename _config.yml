@@ -110,7 +110,7 @@ theme: butterfly
 
 ## Live2D看板娘动画
 live2d:
-    enable: true
+    enable: false
     scriptFrom: local
     pluginRootPath: live2d_models/
     pluginJsPath: lib/

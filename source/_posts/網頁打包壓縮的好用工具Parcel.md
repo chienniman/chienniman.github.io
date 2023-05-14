@@ -4,7 +4,6 @@ date: 2023-03-12 17:00:11
 tags:
     - Frontend
     - Parcel
-cover: /images/parcel.jpg
 abbrlink: "2482"
 author: Boris Chien
 description: 說到打包工具，多數人的第一直覺就是Webpack，我也不例外，今天就要介紹一個簡單快速的打包工具Parcel，適用於小型專案的開發。

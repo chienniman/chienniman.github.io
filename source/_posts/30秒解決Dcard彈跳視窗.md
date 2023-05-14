@@ -4,7 +4,6 @@ tags:
     - Frontend
     - React.js
     - Mantine
-cover: /images/dcard.jpg
 abbrlink: d0fe
 date: 2023-02-28 14:12:05
 author: Boris Chien

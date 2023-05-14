@@ -8,7 +8,6 @@ tags:
     - OAuth
     - Authorization
     - API
-cover: /images/line-api-overview.jpg
 author: Boris Chien
 categories:
     - Line API

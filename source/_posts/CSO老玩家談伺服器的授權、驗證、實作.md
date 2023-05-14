@@ -7,7 +7,6 @@ tags:
   - Authorization
   - Express.js
   - Node.js
-cover: /images/cso.jpg
 abbrlink: 8be7
 date: 2023-02-21 23:02:00
 author: Boris Chien

@@ -8,7 +8,6 @@ tags:
     - Laravel
     - OAuth
     - Design pattern
-cover: /images/monica.jpg
 author: Boris Chien
 description: Monica是一個開源專案，用於組織和記錄與親人的互動。又稱PRM，個人關係管理。可將其視為您朋友或家人的CRM，本文翻譯貢獻，與感興趣的功能，API、數據導出、Oauth、以及issue。
 keywords:

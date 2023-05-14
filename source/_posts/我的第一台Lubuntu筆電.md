@@ -3,7 +3,6 @@ title: 我的第一台Lubuntu筆電
 tags:
   - Linux
   - Lubuntu
-cover: /images/lubuntu.png
 author: Boris Chien
 keywords:
   - Linux

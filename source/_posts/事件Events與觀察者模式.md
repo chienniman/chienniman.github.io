@@ -5,7 +5,6 @@ tags:
     - Laravel
     - Events
     - Observer pattern
-cover: /images/observer.jpg
 author: Boris Chien
 keywords:
     - Backend

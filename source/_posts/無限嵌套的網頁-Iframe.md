@@ -3,7 +3,6 @@ title: 無限嵌套的網頁-Iframe
 tags:
     - Iframe
     - Frontend
-cover: /images/russianDoll.jpg
 abbrlink: cfa3
 date: 2023-02-20 21:14:23
 author: Boris Chien

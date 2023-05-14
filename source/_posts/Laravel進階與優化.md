@@ -9,7 +9,6 @@ tags:
   - Cache
   - Broadcasting
   - 優化
-cover: /images/laravel.jpg
 author: Boris Chien
 description: Laravel後端API優化，進階功能Collection、Cache、Broadcasting，開發紀錄，範例均為開發中真實遇到
 keywords:

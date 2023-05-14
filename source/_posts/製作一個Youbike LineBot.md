@@ -9,7 +9,6 @@ tags:
     - Youbike API
     - Youbike
     - render
-cover: /images/u-bike.jpg
 abbrlink: "2482"
 date: 2023-02-25 22:24:54
 author: Boris Chien
