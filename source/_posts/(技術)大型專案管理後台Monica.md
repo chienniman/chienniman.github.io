@@ -54,36 +54,36 @@ OAuth 2.0 是一種標準的開放授權協議，允許用戶在 Monica 上授�
 curl -H "Authorization: Bearer Personal access token" https://app.monicahq.com/api
 ```
 ## 個人驗證令牌(personal-access-token)
-![](/images/monica-personal-access-token.jpg)
+![](/images/monica/personal-access-token.jpg)
 將 token 放在 postmon 的 Authorization 
 
 ## postman測試
-![](/images/postman-monica.jpg)
+![](/images/monica/postman-test.jpg)
 
 ## 開放授權(OAuth)
 monica 也提供 OAuth 方式驗證 API，向伺服器發起驗證請求，跳出授權允許視窗，取得 Access Token，之後請求夾帶令牌訪問保護資源
 
 ## 流程
-![](/images/oauth-process.jpg)
+![](/images/monica/oauth-process.jpg)
 
 ## Postmon
-![](/images/postmon-oauth.jpg)
+![](/images/monica/postmon-oauth.jpg)
 配置 postmon 參數，將 Callback URL 填入 monica 後台 API，Token name、Client ID、Client Secret 填入 postmon
 
 ## 授權請求
-![](/images/postmon-oauth-popup.jpg)
+![](/images/monica/postmon-oauth-popup.jpg)
 postmon 會跳出授權請求，允許後核發 Access Token、Refresh Token，點擊使用後自動帶入 Authorization Token 欄位
 
 ## 測試請求 
-![](/images/postmon-oauth-success.jpg)
+![](/images/monica/postmon-oauth-success.jpg)
 [The OAuth 2.0 Authorization Framework: Bearer Token Usage](https://datatracker.ietf.org/doc/html/rfc6750)
 [monica-api 文件](https://www.monicahq.com/api)
 
 ## 第三方登入
 官方託管 monica 支持 OAuth API，卻不支持 Facebook、Google 第三方登入，主流的平台為提升用戶體驗，通常會支持，疑惑地查找社群討論發現
-![](/images/issue-558.jpg)
+![](/images/monica/issue-558.jpg)
 degan6 提出 OAuth 登入的 pull request，但被主要開發者拒絕了
-![](/images/deny-issue.jpg)
+![](/images/monica/deny-issue.jpg)
 1.不想要支持有疑慮的第三方登入(Facebook 疑似洩漏個資事件)<br> 2.官方託管已經移除大多數的追蹤程式碼
 
 ## 數據導出
@@ -91,7 +91,7 @@ monica 能輸出聯絡人vCard，使用者Sql、Json 等，相當便利，數據
 Laravel預設使用同步隊列(sync)，保證實時、穩定性，方便進行開發與測試，但對於大量、耗時任務，同步處理會阻塞主線程，因此不適合高併發場景。
 
 ## vCard
-![](/images/monica-vcard.jpg)
+![](/images/monica/vcard.jpg)
 vCard 是電子名片的文件格式標準。它一般附加在電子郵件之後，但也可以用於其它場合（如在網際網路上相互交換）。vCard 可包含的信息有：姓名、地址資訊、電話號碼、URL，logo，相片等。
 
 ## Routes
@@ -126,7 +126,7 @@ public function vCard(Contact $contact)
 {% endcodeblock %}
 
 ## Sql & Json導出
-![](/images/monica-export-data.jpg)
+![](/images/export-data.jpg)
 
 ## Routes
 {% codeblock lang:php %}
@@ -391,7 +391,7 @@ class PendingDispatch
 {% endcodeblock %}
 
 ## 成功通知
-![](/images/monica-export-email.jpg)
+![](/images/monica/export-email.jpg)
 
 ## 發信notify
 {% codeblock lang:php %}

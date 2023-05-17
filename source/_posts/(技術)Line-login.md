@@ -54,16 +54,16 @@ https://access.line.me/oauth2/v2.1/authorize
 ## Postmon
 
 在 Postmon 選擇 Oauth2.0，填入參數，並將 Callback url 配置到 Line 設定中
-![](/images/postmon-line-oauth-login.png)
+![](/images/lineLogin/postmon-line-oauth-login.png)
 
 ## Line popup
 
 跳出授權頁面
-![](/images/postmon-line-oauth-popup1.png)
+![](/images/lineLogin/postmon-line-oauth-popup1.png)
 確認存取權限
-![](/images/postmon-line-oauth-popup2.jpg)
+![](/images/lineLogin/postmon-line-oauth-popup2.jpg)
 取得 Access Token，id_token
-![](/images/postmon-line-oauth-result.png)
+![](/images/lineLogin/postmon-line-oauth-result.png)
 
 ## JWT
 
@@ -93,7 +93,7 @@ HS256、RS256、ES256
 
 header 和 payload 為 JSON 物件經過 Base64 編碼，signature 為 private key 對編碼後的 header +payload 經過演算法完成簽章，再將簽章用 Base64 編碼後。
 
-![](/images/jwt-io-line-result.png)
+![](/images/lineLogin/jwt-io-line-result.png)
 
 ## 參考
 

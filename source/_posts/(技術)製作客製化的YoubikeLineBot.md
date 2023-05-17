@@ -36,7 +36,7 @@ categories:
 
 1.快速查詢 youbike 特定站點<br> 2.格式客製<br> 3.精簡高效(134 行)<br> 4.部署 render 雲<br> 5.支持自動排程<br>
 
-![](/images/ubike-robot-result.png)
+![](/images/youbikeLinebot/ubike-robot-result.png)
 
 ## SDK
 
@@ -65,7 +65,7 @@ mkdir .env
 ```
 
 Configuring Environment Variables & Secrets
-![](/images/config.jpg)
+![](/images/youbikeLinebot/config.jpg)
 
 ## Cron
 
@@ -73,14 +73,14 @@ Configuring Environment Variables & Secrets
 npm install --save node-cron
 ```
 
-![](/images/cron.jpg)
+![](/images/youbikeLinebot/cron.jpg)
 
 ## 臺中交通資訊 API
 
 上網搜了一下發現臺中交通資訊 API 整合的相當不錯，Swagger 的文件架構清晰，井然有序，這邊給個讚，~~台中路面狀況如果也可以就謝天謝地了~~。
 [臺中交通資訊 API](https://motoretag.taichung.gov.tw/DataAPI/swagger/ui/index#/YoubikeAPI)
-![](/images/youbike-api.jpg)
-![](/images/query-ubike.jpg)
+![](/images/youbikeLinebot/youbike-api.jpg)
+![](/images/youbikeLinebot/query-ubike.jpg)
 
 
 ### LINE Developers
@@ -91,7 +91,7 @@ npm install --save node-cron
 ### LINE Bot channel
 
 登入後點選 Create new channel 創建新的 LINE Bot 頻道，並且填寫頻道相關資訊（例如：頻道名稱、頻道圖片、類型等等）。
-![](/images/channel.jpg)
+![](/images/youbikeLinebot/channel.jpg)
 
 ### 本地測試
 
@@ -133,9 +133,9 @@ Forwarding https://xxxxxx.ngrok.io -> localhost:{port}
 ### 驗證失敗
 
 ngrok 運行 500，terminal 顯示 404，因為 token 沒設定好
-![](/images/500.jpg)
+![](/images/youbikeLinebot/500.jpg)
 
-![](/images/404.jpg)
+![](/images/youbikeLinebot/404.jpg)
 
 ### channel access tokens
 

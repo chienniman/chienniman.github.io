@@ -29,10 +29,10 @@ Linux有許多版本，適合桌面使用的Ubuntu，常用於伺服器和商業
 Ubuntu又有許多分支，UbuntuKylin、Kubuntu、Xubuntu、Edubuntu、Mythbuntu，本機選用的Lubuntu輕量、快速，適合老舊機型、規格低下的筆電。
 
 ## 映像檔
-先到官方網站下載映像檔，![](/images/jammy-fish.jpg)
+先到官方網站下載映像檔，![](/images/lubuntu/jammy-fish.jpg)
 
 ## 燒錄開機碟
-![](/images/rufus.jpg)
+![](/images/lubuntu/rufus.jpg)
 使用rufus製作開機碟
 1.裝置，選擇外接硬碟(USB)
 2.開機模式，選擇剛剛下載的Lubuntu映像檔
@@ -40,37 +40,37 @@ Ubuntu又有許多分支，UbuntuKylin、Kubuntu、Xubuntu、Edubuntu、Mythbunt
 
 ## UEFI(統一可擴充韌體接口)開機
 Asus筆電開機時長按F2，進入UEFI，開機順序更改為USB開機
-![](/images/uefi.jpg)
+![](/images/lubuntu/uefi.jpg)
 
 ## 啟動安裝
 grub 啟動畫面。
 1.安裝，選擇Try 或 Install Lubuntu。
 2.顯卡問題，比如較新的 nvidia 卡，選擇safe graphics。
 3.測試ram，選擇Test memory。
-![](/images/lbuntu-install-1.jpg)
+![](/images/lubuntu/install-1.jpg)
 
 ## 實時預覽
 啟動後，探索 Lubuntu 並確保所有硬體都能正常工作。準備好後，雙擊桌面左上角的圖標
-![](/images/lbuntu-install-2.jpg)
+![](/images/lubuntu/install-2.jpg)
 
 ## 設定
-![](/images/lbuntu-install-3.jpg)
+![](/images/lubuntu/install-3.jpg)
 
 ## 位置
-![](/images/lbuntu-install-4.jpg)
+![](/images/lubuntu/install-4.jpg)
 
 ## 鍵盤
-![](/images/lbuntu-install-5.jpg)
+![](/images/lubuntu/install-5.jpg)
 
 ## 切割硬碟
-![](/images/lbuntu-install-6.jpg)
+![](/images/lubuntu/install-6.jpg)
 刪除磁盤。格式化磁盤，請備份所有重要資料。
 
 ## 密碼配置
-![](/images/lbuntu-install-7.jpg)
+![](/images/lubuntu/install-7.jpg)
 
 ## 最後配置檢查
-![](/images/lbuntu-install-8.jpg)
+![](/images/lubuntu/install-8.jpg)
 
 重新啟動，大功告成
 

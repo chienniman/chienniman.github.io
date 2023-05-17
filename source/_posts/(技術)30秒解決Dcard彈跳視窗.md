@@ -19,13 +19,13 @@ categories:
 有時在網路上看到有趣的 Dcard 文章，好奇點進去，看留言時卻跳出討厭的登入視窗，這篇文章會示範如何用開發者工具在 30 秒內關閉
 
 1. 點擊 F12，開發者工具
-   ![](/images/dcard.jpg)
+   ![](/images/dcard/page.jpg)
 
 2. 找到彈跳視窗根元素(最外層，屬性 tabindex="0")，點滑鼠右鍵，刪除元素，這時候就可以看到乾淨漂亮的頁面了~但是還是不能滾動
-   ![](/images/root-element.jpg)
+   ![](/images/dcard/root-element.jpg)
 
 3. 往上滑找到 body 元素，element 屬性加上 overflow:scroll
-   ![](/images/dcard-scroll.jpg)
+   ![](/images/scroll.jpg)
 
 4. 大功告成，不需要打帳密了
 

@@ -107,6 +107,6 @@ poll();
 
 #### Pusher Channels
 訂閱事件即時更新，Pusher Channels是託管的伺服器群，免費使用上受到限制，包含每日最大訊息、併發連接數等。
-![](/images/free-channel-plan.jpg)
+![](/images/laravel/free-channel-plan.jpg)
 
 
