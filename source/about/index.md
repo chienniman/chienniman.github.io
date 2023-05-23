@@ -4,19 +4,24 @@ date: 2023-02-27 13:37:20
 type: 關於
 ---
 
-## 我
-技能點在網頁前後端與LineBot，技術文章主要關於新技術、工作的優化。
-雖然產量不高，但會以高質量+解決現實世界問題為主
+* 網頁前後端工程師
+* 大型開源專案Monica翻譯貢獻者
+* 軟體專案領導經驗
 
-運動:桌球、健身、爬山、騎腳踏車
-遊戲:特戰英豪(白金)、傳說對決(鑽石)、許多的2D射擊遊戲
+## 認證
+{% gallery %}
+![](/images/about/az900.webp)
+![](/images/about/google-marketing.webp)
+![](/images/about/python-datascience.webp)
+![](/images/about/security-proof.webp)
+{% endgallery %}
 
-有興趣，歡迎找我一起玩遊戲。
+## 技能
+[![My Skills](https://skillicons.dev/icons?i=react,js,html,sass,jest,php,laravel,nginx,mysql,nodejs,bash,cloudflare,docker,git,github,gitlab)](https://skillicons.dev)  
 
 ### Web
 - Customer Service Frontend/Backend Management System/Chat Room
 - Corporate Image Website/Product Backend Management
-- Electronic Video Games
 - Blog
 
 ### App
@@ -25,19 +30,17 @@ type: 關於
 
 #### Frontend
 -  React/Mantine/Material-UI
--  Bootstrap5/Vue
 -  HTML/CSS/JavaScript
--  Hexo
--  Webpack
+-  Webpack/Parcel
 
 #### Backend
-- Laravel 8/9/Express.js
-- LineBot/webhook 
-- PHP/C++/Node.js
+- Laravel
+- LineBot 
+- PHP/Node.js
 - MySQL/SQL  
-- Nginx/Linux/ngrok
-- Workerman
-- Websocket/MQTT/Https/FTP/SSH
+- Nginx/Linux/
+- Docker
+- Websocket/MQTT
 
 #### Testing
 - Jest

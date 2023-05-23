@@ -12,8 +12,13 @@ keywords:
     - Parcel
 categories:
     - Frontend
+top_img: false
+cover: images/parcel/cover.webp
 ---
+
+{% note info no-icon %}
 說到打包工具，多數人的第一直覺就是Webpack，我也不例外，今天就要介紹一個簡單快速的打包工具Parcel，適用於小型專案的開發。
+{% endnote %}
 
 ## 為何壓縮
 伺服器中，會使用壓縮來減少頻寬和傳輸時間，從而提高網站性能和用戶體驗。通常壓縮的是返回給客戶端的HTML、CSS、JavaScript、圖像等靜態資源文件。透過減少文件大小。
@@ -37,6 +42,7 @@ Parcel automatically tracks all of the files, configuration, plugins, and dev de
 
 Parcel 所做的一切都被緩存——轉換、依賴解析、捆綁、優化，以及介於兩者之間的一切。這意味著開發伺服器會立即重新啟動，並且永遠不會構建相同的代碼兩次。
 自動追蹤構建中所有文件、配置、插件和依賴項，並在變化時使緩存失效。與低階操作系統 API 整合，無論項目大小如何，都可以在幾毫秒內確定哪些文件發生了變化。
+
 
 ## 安裝
 ```

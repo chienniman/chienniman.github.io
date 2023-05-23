@@ -15,7 +15,8 @@ categories:
     - Backend
 abbrlink: 4281
 date: 2023-05-03 20:04:04
-cover: images/observer/cover.jpg
+top_img: false
+cover: images/observer/cover.webp
 ---
 
 ## 觀察者模式(Observer pattern)

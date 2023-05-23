@@ -10,6 +10,8 @@ tags:
 author: Boris Chien
 categories:
     - Line API
+top_img: false
+cover: images/lineLogin/cover.webp
 ---
 
 ## Line login

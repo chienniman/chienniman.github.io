@@ -1,5 +1,5 @@
 ---
-title: (技術)大型專案管理後台Monica
+title: (技術)大型關係管理Monica
 tags:
     - Backend
     - Authentication
@@ -20,6 +20,8 @@ categories:
     - Backend
 abbrlink: 49048
 date: 2023-04-01 19:25:34
+top_img: false
+cover: images/monica/cover.webp
 ---
 
 Monica 是一個開源專案，用於組織和記錄與親人的互動。又稱 PRM，個人關係管理。可將其視為您朋友或家人的 CRM，本文會介紹感興趣的功能，API、數據導出、OAuth、以及 issue。
@@ -40,7 +42,10 @@ MySQL
 Platform.sh
 Heroku
 ```
-值得注意的是，官方文件提到，構建專案程式需要 1.5GB RAM 以上，在 GCP 開便宜的 n1-standard-1，每月最少也要 600 台幣，用官方託管版本，只要 270NT/每月。
+
+{% note warning no-icon %}
+官方文件提到，構建專案程式需要 1.5GB RAM 以上，在 GCP 開便宜的 n1-standard-1，每月最少也要 600 台幣
+{% endnote %}
 
 ## Authentication
 在 Monica 中，OAuth 2.0 與個人訪問令牌是兩種不同的身份驗證機制，但它們都用於授權 API 訪問。
