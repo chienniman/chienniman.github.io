@@ -49,20 +49,6 @@ type: 關於
 ### VCS
 - Gitlab/Github/git
 
-
-## 學歷
-
-{% timeline 2023,green %}
-<!-- timeline Jan. -->
-**國立中興大學 學士**
-
- * [行動載具專題(A+)組長](https://drive.google.com/file/d/1H_IDs9rDJIeoyt_d_YVdAo8WjtIRS_T2/view?usp=sharing)
- * 資訊社員
-<!-- endtimeline -->
-{% endtimeline %}
-{% timeline 2022,green %}
-{% endtimeline %}
-
 ## 聯絡方式
 
 {% note info no-icon %}
