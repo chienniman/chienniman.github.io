@@ -4,6 +4,19 @@ date: 2023-02-27 13:37:20
 type: 關於
 ---
 
+## 作品集
+
+<div class="gallery-group-main">
+{% galleryGroup 'YoubikeLineBot' '自動排程Nodejs機器人' '/(技術)製作自動排程的YoubikeLineBot' /images/about/youbikeLinebot.webp%}
+{% galleryGroup '多人聊天' 'Workerman&Laravel' 'https://github.com/chienniman/ez-chat-app' /images/about/workermanChat.webp%}
+</div>
+
+
+<hr>
+
+## 開源貢獻
+[大型開源專案Monica文件翻譯](https://github.com/chienniman/monica)
+
 ## 專業認證
 
 {% hideToggle Microsoft AZ900,bg,color %}
@@ -22,10 +35,6 @@ type: 關於
 ![](/images/about/google-marketing.webp)
 {% endhideToggle %}
 
-
-## 開源貢獻
-[大型開源專案Monica文件翻譯](https://github.com/chienniman/monica)
-
 ## 技能
 [![My Skills](https://skillicons.dev/icons?i=react,js,html,sass,jest,php,laravel,nginx,mysql,nodejs,bash,cloudflare,docker,git,github,gitlab)](https://skillicons.dev) 
 
@@ -39,7 +48,7 @@ type: 關於
 - Laravel
 - PHP/Node.js
 - MySQL/SQL  
-- Nginx/Linux/
+- Nginx/Linux
 - Docker
 - Websocket
 

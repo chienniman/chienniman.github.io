@@ -3,8 +3,6 @@ title: (技術)製作自動排程的YoubikeLineBot
 tags:
     - Backend
     - LineBot
-    - Webhook
-    - ngrok
     - Line API
     - Youbike API
     - render

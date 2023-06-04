@@ -5,9 +5,6 @@ date: 2023-03-01 23:10:29
 tags:
   - Backend
   - Laravel
-  - Collection
-  - Cache
-  - Broadcasting
 author: Boris Chien
 description: Laravel後端API優化，進階功能Collection、Cache、Broadcasting
 keywords:
@@ -18,6 +15,7 @@ keywords:
   - Broadcasting
 categories:
     - Backend
+cover: images/laravel/cover.webp
 ---
 
 ## Collection-優雅地包裝
