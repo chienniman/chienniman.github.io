@@ -8,7 +8,6 @@ type: 關於
 
 <div class="gallery-group-main">
 {% galleryGroup 'YoubikeLineBot' '自動排程Nodejs機器人' '/(技術)製作自動排程的YoubikeLineBot' /images/about/youbikeLinebot.webp%}
-{% galleryGroup '多人聊天' 'Workerman&Laravel' 'https://github.com/chienniman/ez-chat-app' /images/about/workermanChat.webp%}
 </div>
 
 
@@ -58,7 +57,10 @@ type: 關於
 ### VCS
 - Gitlab/Github/git
 
-## 聯絡方式
+## 相關連結
+* [Hackmd筆記](https://hackmd.io/@monkeymonkey)
+
+## 聯絡
 
 {% note info no-icon %}
 嗨 ✋，親愛的訪客您好，可透過cscs851210max@gmail.com或右方 tidio 聊天室🧐聯繫我，感謝閱讀!

@@ -4,13 +4,14 @@
 
 menu:
     主頁: / || fas fa-home
-    成就: /archives/ || fas fa-archive
+    作品集: /about/ || fas fa-address-card
+    # 成就: /archives/ || fas fa-archive
+    技術隨筆: https://hackmd.io/@monkeymonkey || fa-fw fas fa-compass
     # Tags: /tags/ || fas fa-tags
-    技術筆記: /categories/ || fas fa-folder-open
+    分類: /categories/ || fas fa-folder-open
     # List||fas fa-list:
     #   Music: /music/ || fas fa-music
     #   Movie: /movies/ || fas fa-video
-    關於: /about/ || fas fa-heart
     # 聯絡: /link/ || fas fa-link
 
 nav:
