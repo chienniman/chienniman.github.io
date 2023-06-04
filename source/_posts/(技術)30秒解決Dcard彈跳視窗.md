@@ -12,6 +12,8 @@ keywords:
     - Modal
 categories:
     - Frontend
+top_img: false
+cover: images/dcard/cover.webp
 ---
 
 ## 可以不要一直叫我登入嗎
@@ -44,5 +46,5 @@ window.addEventListener('load', function() {
 {% endcodeblock %}
 
 ## 免責聲明
-本文僅為客戶端提供教學示範之用，請勿用於任何影響網頁正常運作的技術，否則將承擔相應的法律責任。
+本文僅為客戶端提供教學示範之用，請勿用於任何影響網頁正常運作的技術，否則將自行承擔相應法律責任。
 
