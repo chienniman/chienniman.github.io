@@ -1,20 +1,8 @@
 ---
-title: 作品集
+title: 技能
 date: 2023-02-27 13:37:20
-type: 作品集
+type: 技能
 ---
-
-## 作品集
-
-<div class="gallery-group-main">
-{% galleryGroup 'YoubikeLineBot' '自動排程Nodejs機器人' '/(技術)製作自動排程的YoubikeLineBot' /images/about/youbikeLinebot.webp%}
-</div>
-
-
-<hr>
-
-## 開源貢獻
-[大型開源專案Monica文件翻譯](https://github.com/chienniman/monica)
 
 ## 專業認證
 
@@ -57,13 +45,10 @@ type: 作品集
 ### VCS
 - Gitlab/Github/git
 
-## 相關連結
-* [Hackmd筆記](https://hackmd.io/@monkeymonkey)
-
-## 聯絡
+<!-- ## 聯絡
 
 {% note info no-icon %}
 嗨 ✋，親愛的訪客您好，可透過cscs851210max@gmail.com或右方 tidio 聊天室🧐聯繫我，感謝閱讀!
-{% endnote %}
+{% endnote %} -->
 
 
