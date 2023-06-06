@@ -160,6 +160,13 @@
   </url>
   
   <url>
+    <loc>https://www.boris.idv.tw/tags/Frontend/</loc>
+    <lastmod>2023-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.boris.idv.tw/tags/AZ-900/</loc>
     <lastmod>2023-06-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -188,13 +195,6 @@
   </url>
   
   <url>
-    <loc>https://www.boris.idv.tw/tags/Frontend/</loc>
-    <lastmod>2023-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.boris.idv.tw/tags/Monica/</loc>
     <lastmod>2023-06-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -210,13 +210,6 @@
   
   <url>
     <loc>https://www.boris.idv.tw/tags/OAuth/</loc>
-    <lastmod>2023-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.boris.idv.tw/tags/Parcel/</loc>
     <lastmod>2023-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -250,6 +243,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://www.boris.idv.tw/tags/Parcel/</loc>
+    <lastmod>2023-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -267,14 +267,14 @@
   </url>
   
   <url>
-    <loc>https://www.boris.idv.tw/categories/Backend/</loc>
+    <loc>https://www.boris.idv.tw/categories/Frontend/</loc>
     <lastmod>2023-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.boris.idv.tw/categories/Frontend/</loc>
+    <loc>https://www.boris.idv.tw/categories/Backend/</loc>
     <lastmod>2023-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
