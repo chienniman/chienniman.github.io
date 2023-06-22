@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.boris.idv.tw/(%E6%8A%80%E8%A1%93)%E9%80%8F%E9%81%8EGithub%20Action%E5%AF%A6%E7%8F%BECICD%20Pipeline/</loc>
+    <loc>https://www.boris.idv.tw/(%E6%8A%80%E8%A1%93)%E9%80%8F%E9%81%8EGithub-Action%E5%AF%A6%E7%8F%BECICD-Pipeline/</loc>
     
     <lastmod>2023-06-22</lastmod>
     
@@ -169,13 +169,6 @@
   </url>
   
   <url>
-    <loc>https://www.boris.idv.tw/tags/Frontend/</loc>
-    <lastmod>2023-06-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.boris.idv.tw/tags/AZ-900/</loc>
     <lastmod>2023-06-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -219,6 +212,20 @@
   
   <url>
     <loc>https://www.boris.idv.tw/tags/OAuth/</loc>
+    <lastmod>2023-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.boris.idv.tw/tags/Frontend/</loc>
+    <lastmod>2023-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.boris.idv.tw/tags/Parcel/</loc>
     <lastmod>2023-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -273,13 +280,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://www.boris.idv.tw/tags/Parcel/</loc>
-    <lastmod>2023-06-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -297,14 +297,14 @@
   </url>
   
   <url>
-    <loc>https://www.boris.idv.tw/categories/Frontend/</loc>
+    <loc>https://www.boris.idv.tw/categories/Backend/</loc>
     <lastmod>2023-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.boris.idv.tw/categories/Backend/</loc>
+    <loc>https://www.boris.idv.tw/categories/Frontend/</loc>
     <lastmod>2023-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
