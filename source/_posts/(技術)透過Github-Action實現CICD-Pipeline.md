@@ -1,5 +1,5 @@
 ---
-title: (技術)透過Github Action實現CICD Pipeline
+title: (技術)透過Github-Action實現CICD-Pipeline
 categories:
     - CI/CD
 date: 2023-06-22 21:18:44
@@ -10,9 +10,8 @@ tags:
     - CICD Pipeline
 cover: images/cicdPipeline/cover.webp
 ---
+
 ![](images/cicdPipeline/pipeline.webp)
-
-
 
 ## How to use
 * git clone
