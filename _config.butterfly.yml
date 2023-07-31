@@ -4,7 +4,7 @@
 
 menu:
     主頁: / || fas fa-home
-    作品集: /portfolio/ || fas fa-address-card
+    # 作品集: /portfolio/ || fas fa-address-card
     技能: /about/ || fas fa-archive
     技術筆記: https://hackmd.io/@monkeymonkey || fa-fw fas fa-compass
     分類: /categories/ || fas fa-folder-open
