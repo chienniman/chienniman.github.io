@@ -2,16 +2,12 @@
 title: (技術)實作Laravel-RESTful-API與JWT驗證
 date: 2023-10-10 11:55:18
 tags:
-    - Backend
-    - Authentication
-    - Authorization
+    - RESTful API
     - JWT
     - Laravel
 author: Boris Chien
 keywords:
-    - Backend
-    - Authentication
-    - Authorization
+    - RESTful API
     - JWT
     - Laravel
 ---
