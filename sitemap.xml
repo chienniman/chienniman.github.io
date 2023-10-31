@@ -4,7 +4,7 @@
   <url>
     <loc>https://www.boris.idv.tw/(%E5%BF%83%E5%BE%97)%E4%B8%8D%E5%90%88%E9%82%8F%E8%BC%AF%E7%9A%84%E4%B8%80%E5%91%A8/</loc>
     
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -184,169 +184,169 @@
 
   <url>
     <loc>https://www.boris.idv.tw/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://www.boris.idv.tw/tags/Diary/</loc>
-    <lastmod>2023-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.boris.idv.tw/tags/Agile/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.boris.idv.tw/tags/Linux/</loc>
-    <lastmod>2023-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.boris.idv.tw/tags/Lubuntu/</loc>
-    <lastmod>2023-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.boris.idv.tw/tags/Frontend/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <loc>https://www.boris.idv.tw/tags/Diary/</loc>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/AZ-900/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.boris.idv.tw/tags/Frontend/</loc>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/Swagger/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.boris.idv.tw/tags/Linux/</loc>
+    <lastmod>2023-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.boris.idv.tw/tags/Lubuntu/</loc>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/Backend/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/Authentication/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/Authorization/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/Monica/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/Laravel/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/OAuth/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/RESTful-API/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/JWT/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/Parcel/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/LineBot/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/Line-API/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/Youbike-API/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/render/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/CI-CD/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/Github-Action/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/CICD-Pipeline/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -355,42 +355,42 @@
   
   <url>
     <loc>https://www.boris.idv.tw/categories/Diary/</loc>
-    <lastmod>2023-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.boris.idv.tw/categories/Linux/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/categories/Frontend/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.boris.idv.tw/categories/Linux/</loc>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/categories/Backend/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/categories/Line-API/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/categories/CI-CD/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
