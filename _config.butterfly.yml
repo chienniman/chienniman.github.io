@@ -399,7 +399,7 @@ chatra:
 # tidio
 # https://www.tidio.com/
 tidio:
-    enable: true
+    enable: false
     public_key: lbdngibnhbxqkrphkeeoto6hrmjmi1yf
 
 # daovoice
@@ -885,7 +885,7 @@ inject:
         # - <link rel="stylesheet" href="/xxx.css">
     bottom:
         # - <script src="xxxx"></script>
-        <script src="//code.tidio.co/lbdngibnhbxqkrphkeeoto6hrmjmi1yf.js" async></script>
+        # <script src="//code.tidio.co/lbdngibnhbxqkrphkeeoto6hrmjmi1yf.js" async></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
