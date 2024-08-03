@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>(技術)十分鐘內架設好Terraria遊戲伺服器</title>
+      <link href="/(%E6%8A%80%E8%A1%93)%E5%8D%81%E5%88%86%E9%90%98%E5%85%A7%E6%9E%B6%E8%A8%AD%E5%A5%BDTerraria%E9%81%8A%E6%88%B2%E4%BC%BA%E6%9C%8D%E5%99%A8/"/>
+      <url>/(%E6%8A%80%E8%A1%93)%E5%8D%81%E5%88%86%E9%90%98%E5%85%A7%E6%9E%B6%E8%A8%AD%E5%A5%BDTerraria%E9%81%8A%E6%88%B2%E4%BC%BA%E6%9C%8D%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<h2 id="多人遊戲"><a href="#多人遊戲" class="headerlink" title="多人遊戲"></a>多人遊戲</h2><p>開設一個遊戲伺服器大概有2種方式，透過本機開設伺服器或是使用第三方託管伺服器，前者需要自行處理軟硬體設定，防火牆<br>、路由轉發，下載並設定伺服器軟體，遇到DDOS時相當難處哩，但也有自由度高的優點，使用雲端遊戲伺服器變成更好的選擇，可以在幾分鐘內設定好，隨時依照需求拓展伺服器規格，<a href="https://godlike.host/">godlike</a>提供了市面熱門遊戲的整合，<br>TF、Minecraft、GTA5、CS、Terraria，費用也相當實惠，8人以下規格，每月僅需要200多台幣，以下會介紹設定。</p><h2 id="雲端託管伺服器"><a href="#雲端託管伺服器" class="headerlink" title="雲端託管伺服器"></a>雲端託管伺服器</h2><h3 id="選擇方案並付款"><a href="#選擇方案並付款" class="headerlink" title="選擇方案並付款"></a>選擇方案並付款</h3><p><img src="/images/terraria/godlike/1.webp"></p><h3 id="伺服器面板"><a href="#伺服器面板" class="headerlink" title="伺服器面板"></a>伺服器面板</h3><p>透過按鈕啟動、關閉伺服器，也可以透過指令控制伺服器</p><p>help            Displays a list of commands.<br>playing         Shows the list of players.<br>clear           Clear the console window.<br>exit            Shutdown the server and save.<br>exit-nosave     Shutdown the server without saving.<br>save            Save the game world.<br>kick player     Kicks a player from the server.<br>ban  player     Bans a player from the server.<br>password        Show password.<br>password  pass  Change password.<br>version         Print version number.<br>time            Display game time.<br>port            Print the listening port.<br>maxplayers      Print the max number of players.<br>say  words      Send a message.<br>motd            Print MOTD.<br>motd words      Change MOTD.<br>dawn            Change time to dawn.<br>noon            Change time to noon.<br>dusk            Change time to dusk.<br>midnight        Change time to midnight.<br>settle          Settle all water.<br>seed            Displays the world seed.</p><p><img src="/images/terraria/godlike/2.webp"><br><img src="/images/terraria/godlike/3.webp"></p><h3 id="複製IP、PORT"><a href="#複製IP、PORT" class="headerlink" title="複製IP、PORT"></a>複製IP、PORT</h3><p><img src="/images/terraria/godlike/4.webp"></p><h3 id="遊戲中輸入IP、PORT來加入"><a href="#遊戲中輸入IP、PORT來加入" class="headerlink" title="遊戲中輸入IP、PORT來加入"></a>遊戲中輸入IP、PORT來加入</h3><p><img src="/images/terraria/godlike/5.webp"><br><img src="/images/terraria/godlike/6.webp"><br><img src="/images/terraria/godlike/7.webp"><br><img src="/images/terraria/godlike/8.webp"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>(技術)開發一隻高防禦血量的變態屠夫</title>
       <link href="/(%E6%8A%80%E8%A1%93)%E9%96%8B%E7%99%BC%E4%B8%80%E9%9A%BB%E9%AB%98%E9%98%B2%E7%A6%A6%E8%A1%80%E9%87%8F%E7%9A%84%E8%AE%8A%E6%85%8B%E5%B1%A0%E5%A4%AB/"/>
       <url>/(%E6%8A%80%E8%A1%93)%E9%96%8B%E7%99%BC%E4%B8%80%E9%9A%BB%E9%AB%98%E9%98%B2%E7%A6%A6%E8%A1%80%E9%87%8F%E7%9A%84%E8%AE%8A%E6%85%8B%E5%B1%A0%E5%A4%AB/</url>
