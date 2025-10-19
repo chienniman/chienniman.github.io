@@ -675,7 +675,7 @@ aside:
             link: https://github.com/chienniman
     card_announcement:
         enable: true
-        content: 喜歡資訊開發🖥，動手組裝🛠
+        content: 需要開發形象官網、電商網站、自動機器人，歡迎透過cscs851210max@gmail.com聯繫我！
     card_recent_post:
         enable: true
         limit: 5 # if set 0 will show all
