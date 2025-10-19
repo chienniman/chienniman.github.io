@@ -1,54 +1,16 @@
 ---
-title: 技能
-date: 2023-02-27 13:37:20
-type: 技能
+title: 關於我
+date: 2025-10-19 13:37:20
+type: 關於
 ---
 
-## 專業認證
+## 關於我
+本站建於2023年，使用hexo + github page + HiNet dns進行開發部署，透過寫文章的方式記錄自己的成長，本身不是資訊科系，大學時修了一門手機載具程式設計專題，從提案、流程設計、開發、部署一手完成，這門課讓我對這個領域產生很強的興趣，於是持續自學後端技術，主要是從網路上的各種教學文章、影片、blog學習的，開發過 web-server、game-server、minecraft-server等。
 
-{% hideToggle Microsoft AZ900,bg,color %}
-![](/images/about/az900.webp)
-{% endhideToggle %}
+目前擔任後端工程師，主要負責開發部署各種遊戲伺服器，興趣是打羽球跟玩槍戰遊戲，我也寫了好幾隻bot都放在我的GitHub，有空可以來逛逛。
 
-{% hideToggle IBM Python Project for Data Science,bg,color %}
-![](/images/about/python-datascience.webp)
-{% endhideToggle %}
+## 工具箱 🛠️
+[![My Skills](https://skillicons.dev/icons?i=go,nodejs,typescript,docker,kubernetes,redis,mongodb,postgres,mysql,linux,nginx,aws,gcp,git,github,gitlab)](https://skillicons.dev) 
 
-{% hideToggle ISCB 資訊系統安全開發與驗證實務,bg,color %}
-![](/images/about/security-proof.webp)
-{% endhideToggle %}
-
-{% hideToggle Google 數位學程,bg,color %}
-![](/images/about/google-marketing.webp)
-{% endhideToggle %}
-
-## 技能
-[![My Skills](https://skillicons.dev/icons?i=react,js,html,sass,jest,php,laravel,nginx,mysql,nodejs,bash,cloudflare,docker,git,github,gitlab)](https://skillicons.dev) 
-
-### Frontend
--  React/Mantine/Material-UI
--  HTML/CSS/JavaScript
--  Bootstrap/Tailwind 
--  Webpack/Parcel
-
-### Backend
-- Laravel
-- PHP/Node.js
-- MySQL/SQL  
-- Nginx/Linux
-- Docker
-- Websocket
-
-### CI/CD
-- Github action
-
-### VCS
-- Gitlab/Github/git
-
-<!-- ## 聯絡
-
-{% note info no-icon %}
-嗨 ✋，親愛的訪客您好，可透過cscs851210max@gmail.com或右方 tidio 聊天室🧐聯繫我，感謝閱讀!
-{% endnote %} -->
 
 
