@@ -14,7 +14,9 @@ timezone: Asia/Taipei
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://www.boris.idv.tw/
-permalink: :title/
+root: /
+# permalink: :title/
+permalink: :link/
 permalink_defaults:
 pretty_urls:
     trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -40,7 +42,7 @@ external_link:
     exclude: ""
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -159,3 +161,36 @@ deploy:
     type: "git"
     repo: https://github.com/chienniman/chienniman.github.io.git
     branch: main
+
+# 效能優化插件設定
+filter_optimize:
+  enable: true
+  remove_comments: true
+  css:
+    enable: true
+    exclude:
+      - '*.min.css'
+  js:
+    enable: true
+    mangle: true
+    exclude:
+      - '*.min.js'
+  html:
+    enable: true
+
+# RSS 插件設定
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
+
