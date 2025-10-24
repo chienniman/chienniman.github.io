@@ -187,7 +187,7 @@ toc:
     scroll_percent: true
 
 post_copyright:
-    enable: true
+    enable: false
     decode: false
     author_href:
     license: CC BY-NC-SA 4.0
@@ -589,7 +589,7 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-    enable: true
+    enable: false
     field: site # site/post
     title-prefix-icon: '\f0c1'
     title-prefix-icon-color: "#F47466"
