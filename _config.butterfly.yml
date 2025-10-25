@@ -565,7 +565,7 @@ activate_power_mode:
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
-    enable: true
+    enable: false
     zIndex: 9999 # -1 or 9999
     mobile: false
 
@@ -943,10 +943,7 @@ CDN:
         # snackbar_css:
         # snackbar:
         # activate_power_mode:
-        fireworks:
-            enable: true
-            zIndex: 9999 # -1 or 9999
-            mobile: false
+        # fireworks:
         # click_heart:
         # ClickShowText:
         # fontawesomeV6:
