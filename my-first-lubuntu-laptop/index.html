@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>我的第一台Lubuntu筆電 | Boris 軟體坊</title><meta name="author" content="Boris"><meta name="copyright" content="Boris"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="前言以前就想要安裝Linux作業系統，長期習慣Windows介面的我遲未行動，一部分是因為許多Steam遊戲不支援，舊筆電(使用5年)出現花屏，可能是顯示卡、螢幕問題，拿去修理效益比實在不大，但又有外出攜帶需求，結合價格、使用頻率、開發需求、硬體規格等多方要素，2021年購入這台不到一萬的迷你筆電。 規格 處理器：IntelR Celeron N4020 Processor 1.1 GHz (4M"><meta property="og:type" content="article"><meta property="og:title" content="我的第一台Lubuntu筆電"><meta property="og:url" content="https://www.boris.idv.tw/my-first-lubuntu-laptop/index.html"><meta property="og:site_name" content="Boris 軟體坊"><meta property="og:description" content="前言以前就想要安裝Linux作業系統，長期習慣Windows介面的我遲未行動，一部分是因為許多Steam遊戲不支援，舊筆電(使用5年)出現花屏，可能是顯示卡、螢幕問題，拿去修理效益比實在不大，但又有外出攜帶需求，結合價格、使用頻率、開發需求、硬體規格等多方要素，2021年購入這台不到一萬的迷你筆電。 規格 處理器：IntelR Celeron N4020 Processor 1.1 GHz (4M"><meta property="og:locale"><meta property="og:image" content="https://www.boris.idv.tw/images/me.png"><meta property="article:published_time" content="2023-04-23T12:20:37.000Z"><meta property="article:modified_time" content="2025-10-25T14:51:26.466Z"><meta property="article:author" content="Boris"><meta property="article:tag" content="Linux"><meta property="article:tag" content="Lubuntu"><meta property="article:tag" content="筆電"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://www.boris.idv.tw/images/me.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "我的第一台Lubuntu筆電",
+  "url": "https://www.boris.idv.tw/my-first-lubuntu-laptop/",
+  "image": "https://www.boris.idv.tw/images/me.png",
+  "datePublished": "2023-04-23T12:20:37.000Z",
+  "dateModified": "2025-10-25T14:51:26.466Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Boris",
+      "url": "https://www.boris.idv.tw"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/images/me.png"><link rel="canonical" href="https://www.boris.idv.tw/my-first-lubuntu-laptop/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css?v=5.5.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload='this.media="all"'><script>(() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-X7D3ML8T1D"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-X7D3ML8T1D')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-X7D3ML8T1D', {'page_path': window.location.pathname})
+}, 'google_analytics')</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '複製成功',
+    error: '複製失敗',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Boris","link":"連結: ","source":"來源: Boris 軟體坊","info":"著作權歸作者所有。如需商業轉載，請聯絡作者獲得授權，非商業轉載請註明出處。"}},
+  lightbox: 'null',
+  Snackbar: {"chs_to_cht":"已切換為繁體中文","cht_to_chs":"已切換為簡體中文","day_to_night":"已切換為深色模式","night_to_day":"已切換為淺色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE={title:"我的第一台Lubuntu筆電",isHighlightShrink:!1,isToc:!0,pageType:"post"}</script><meta name="theme-color" content="#2E86C1"><meta name="msapplication-TileColor" content="#2E86C1"><style>body{font-size:18px!important}#article-container div,#article-container li,#article-container p{font-size:18px!important;line-height:1.8!important}code{font-size:16px!important}</style><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Boris 軟體坊" type="application/atom+xml"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="web_bg" style="background-color:#fafafa"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/me.png" onerror='this.onerror=null,this.src="/img/friend_404.gif"' alt="avatar"></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主頁</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 關於本站</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://hackmd.io/@borisHackMD"><i class="fa-fw fas fa-book"></i><span> 技術筆記</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Boris 軟體坊</span></a><a class="nav-page-title" href="/"><span class="site-name">我的第一台Lubuntu筆電</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span> 返回首頁</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主頁</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 關於本站</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://hackmd.io/@borisHackMD"><i class="fa-fw fas fa-book"></i><span> 技術筆記</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">我的第一台Lubuntu筆電</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2023-04-23T12:20:37.000Z" title="發表於 2023-04-23 20:20:37">2023-04-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2025-10-25T14:51:26.466Z" title="更新於 2025-10-25 22:51:26">2025-10-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Linux/">Linux</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">總字數:</span><span class="word-count">584</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀時間:</span><span>1分鐘</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">瀏覽量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>以前就想要安裝Linux作業系統，長期習慣Windows介面的我遲未行動，一部分是因為許多Steam遊戲不支援，<br>舊筆電(使用5年)出現花屏，可能是顯示卡、螢幕問題，拿去修理效益比實在不大，但又有外出攜帶需求，結合價格、使用<br>頻率、開發需求、硬體規格等多方要素，2021年購入這台不到一萬的迷你筆電。</p><h2 id="規格"><a href="#規格" class="headerlink" title="規格"></a>規格</h2><ul><li>處理器：IntelR Celeron N4020 Processor 1.1 GHz (4M Cache, up to 2.8 GHz)</li><li>記憶體(內建&#x2F;最大)：4GB DDR4</li><li>硬碟：64G EMMC</li></ul><p>大小跟平板差不多(11.6”HD霧面寬螢幕)，重量1.05KG，適合外出，預設安裝Windows10 S模式(只允許 Microsoft Store 上提供的應用程式)，整體來說開機相當快速，能上網、文書處理、前後端開發、跑資料庫，不過有時會黑屏閃退，這台小筆電開太多Chrome分頁，CPU就會飆到80、90%，所以桌機就漸漸取代它，直到最近整理時，打算安裝輕量級的Ubuntu版本，使其起死回生。</p><h2 id="Lubuntu"><a href="#Lubuntu" class="headerlink" title="Lubuntu"></a>Lubuntu</h2><p>Linux有許多版本，適合桌面使用的Ubuntu，常用於伺服器和商業環境，許多其他Linux上游的Debian，CentOS等。<br>Ubuntu又有許多分支，UbuntuKylin、Kubuntu、Xubuntu、Edubuntu、Mythbuntu，本機選用的Lubuntu輕量、快速，適合老舊機型、規格低下的筆電。</p><h2 id="映像檔"><a href="#映像檔" class="headerlink" title="映像檔"></a>映像檔</h2><p>先到官方網站下載映像檔，<img src="/images/posts/my-first-lubuntu-laptop/jammy-fish.jpg" alt="Ubuntu Jammy Jellyfish 下載頁面"></p><h2 id="燒錄開機碟"><a href="#燒錄開機碟" class="headerlink" title="燒錄開機碟"></a>燒錄開機碟</h2><p><img src="/images/posts/my-first-lubuntu-laptop/rufus.jpg" alt="使用 Rufus 製作開機碟"><br>使用rufus製作開機碟<br>1.裝置，選擇外接硬碟(USB)<br>2.開機模式，選擇剛剛下載的Lubuntu映像檔<br>3.資料分割方式，依照UEFI、BIOS選擇</p><h2 id="UEFI-統一可擴充韌體接口-開機"><a href="#UEFI-統一可擴充韌體接口-開機" class="headerlink" title="UEFI(統一可擴充韌體接口)開機"></a>UEFI(統一可擴充韌體接口)開機</h2><p>Asus筆電開機時長按F2，進入UEFI，開機順序更改為USB開機<br><img src="/images/posts/my-first-lubuntu-laptop/uefi.jpg" alt="UEFI 設定畫面"></p><h2 id="啟動安裝"><a href="#啟動安裝" class="headerlink" title="啟動安裝"></a>啟動安裝</h2><p>grub 啟動畫面。<br>1.安裝，選擇Try 或 Install Lubuntu。<br>2.顯卡問題，比如較新的 nvidia 卡，選擇safe graphics。<br>3.測試ram，選擇Test memory。<br><img src="/images/posts/my-first-lubuntu-laptop/install-1.jpg" alt="Lubuntu 開機選單"></p><h2 id="實時預覽"><a href="#實時預覽" class="headerlink" title="實時預覽"></a>實時預覽</h2><p>啟動後，探索 Lubuntu 並確保所有硬體都能正常工作。準備好後，雙擊桌面左上角的圖標<br><img src="/images/posts/my-first-lubuntu-laptop/install-2.jpg" alt="Lubuntu 桌面預覽"></p><h2 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h2><p><img src="/images/posts/my-first-lubuntu-laptop/install-3.jpg" alt="安裝設定選項"></p><h2 id="位置"><a href="#位置" class="headerlink" title="位置"></a>位置</h2><p><img src="/images/posts/my-first-lubuntu-laptop/install-4.jpg" alt="選擇地理位置"></p><h2 id="鍵盤"><a href="#鍵盤" class="headerlink" title="鍵盤"></a>鍵盤</h2><p><img src="/images/posts/my-first-lubuntu-laptop/install-5.jpg" alt="鍵盤配置"></p><h2 id="切割硬碟"><a href="#切割硬碟" class="headerlink" title="切割硬碟"></a>切割硬碟</h2><p><img src="/images/posts/my-first-lubuntu-laptop/install-6.jpg" alt="硬碟分割設定"><br>刪除磁盤。格式化磁盤，請備份所有重要資料。</p><h2 id="密碼配置"><a href="#密碼配置" class="headerlink" title="密碼配置"></a>密碼配置</h2><p><img src="/images/posts/my-first-lubuntu-laptop/install-7.jpg" alt="設定使用者密碼"></p><h2 id="最後配置檢查"><a href="#最後配置檢查" class="headerlink" title="最後配置檢查"></a>最後配置檢查</h2><p><img src="/images/posts/my-first-lubuntu-laptop/install-8.jpg" alt="安裝前最終確認"></p><p>重新啟動，大功告成</p><h2 id="參考資料-amp-圖片"><a href="#參考資料-amp-圖片" class="headerlink" title="參考資料&amp;圖片"></a>參考資料&amp;圖片</h2><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://manual.lubuntu.me/stable/1/Installing_lubuntu.html">lubuntu手冊</a></p></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a><a class="post-meta__tags" href="/tags/Lubuntu/">Lubuntu</a><a class="post-meta__tags" href="/tags/%E7%AD%86%E9%9B%BB/">筆電</a></div><div class="post-share"><div class="social-share" data-image="/images/me.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload='this.media="all"'><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2025-cloud-hosting-review/" title="2025雲端部署平台實測心得"><div class="cover" style="background:var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">2025雲端部署平台實測心得</div></div><div class="info-2"><div class="info-item-1">前言身為一個後端工程師，總是需要一個穩定的雲伺服器來部署專案或測試環境。這幾年用過不少服務，從Cloud到 Serverless都深入研究過，每個都有讓我印象深刻的體驗，今天分享一下真實使用心得，希望能幫到正在選擇的朋友們避開一些坑。 我的雲伺服器使用背景主要是為了： 公司專案 個人作品集 遊戲伺服器（Minecraft、Terraria） 心得1. Google Cloud Platform (GCP)使用時間: 2 年規格: 2vCPU + 4(GB) RAM花費: 一個月1000台幣左右評分: 8&#x2F;10 使用體驗GCP 的介面又多又雜，要選參數：機器類型、映像檔、網路設定等，但是延遲低，支援多個可用區，99%以上的時間都可以順暢使用，這聽起來是應該的，畢竟錢都花了，埋個伏筆，看到後面你就知道了，總之各種支援都很完善，價格合理，提供300美元的適用額度，但是要綁信用卡，對無卡的學生很不方便，就算有卡很多人也不敢綁，原因很簡單，如果設定錯，開錯機器，續費功能沒設定好，等收到帳單真的欲哭無淚，而且有時候不見得是設定問題，例如某些API放在外網，無聊的人一直狂呼叫，選...</div></div></div></a><a class="pagination-related" href="/linebot-development-guide/" title="企業級 LineBot 開發完全攻略1：建立一個 YouBike LineBot!"><div class="cover" style="background:var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">企業級 LineBot 開發完全攻略1：建立一個 YouBike LineBot!</div></div><div class="info-2"><div class="info-item-1">為什麼 LineBot 是台灣企業的必備武器？Line 是台灣最常見的通訊軟體之一，市佔率高達 90% 以上，Messenger、Telegram 都無法與其相提並論，無論是外出購物，講電話，送禮物，都離不開他，獨佔市場的好處是許多商家會透過 Line 提升品牌知名度、觸及目標客群、促進銷售轉換，增加顧客忠誠度，進而達到很好的營銷效果，在這個注意力稀缺的時代，主動觸達客戶比被動等待更有價值。LineBot 不只是通訊軟體，更是能創造實際商業價值的利器！ 飲料店、銀行、行銷公司都大量使用 LineBot 作為營銷手法，比起投放廣告，將促銷訊息推播給使用者能來更好的效果，看 youtube 時大多數人看到不相關的廣告，第一反應是想趕緊關掉，因為使用者不感興趣，Line推播完全不同，使用者大多數是自願加入官方帳號，後續企業精準投放促銷訊息，以我為例，我有加入玉山銀行的官方帳號，最新的投資訊息就會第一時間送到我的 Line 上，節省了許多查資料的時間，也避開了不相關的廣告。 導入 LineBot 能為你的事業帶來什麼？能幫使用者省下大量時間或是賺取金錢的就是有價值的服務，舉個簡單的例子...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/images/me.png" onerror='this.onerror=null,this.src="/img/friend_404.gif"' alt="avatar"></div><div class="author-info-name">Boris</div><div class="author-info-description">本站創立於2023年2月，分享節省時間或是賺錢的軟體</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">3</div></a></div><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/chienniman" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:cscs851210max@gmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://line.me/ti/p/boris_line_id" rel="external nofollow noreferrer" target="_blank" title="Line"><i class="fab fa-line"></i></a><a class="social-icon" href="https://hackmd.io/@borisHackMD" rel="external nofollow noreferrer" target="_blank" title="技術筆記"><i class="fas fa-link"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A6%8F%E6%A0%BC"><span class="toc-number">2.</span> <span class="toc-text">規格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lubuntu"><span class="toc-number">3.</span> <span class="toc-text">Lubuntu</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%A0%E5%83%8F%E6%AA%94"><span class="toc-number">4.</span> <span class="toc-text">映像檔</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%87%92%E9%8C%84%E9%96%8B%E6%A9%9F%E7%A2%9F"><span class="toc-number">5.</span> <span class="toc-text">燒錄開機碟</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UEFI-%E7%B5%B1%E4%B8%80%E5%8F%AF%E6%93%B4%E5%85%85%E9%9F%8C%E9%AB%94%E6%8E%A5%E5%8F%A3-%E9%96%8B%E6%A9%9F"><span class="toc-number">6.</span> <span class="toc-text">UEFI(統一可擴充韌體接口)開機</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%9F%E5%8B%95%E5%AE%89%E8%A3%9D"><span class="toc-number">7.</span> <span class="toc-text">啟動安裝</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%A6%E6%99%82%E9%A0%90%E8%A6%BD"><span class="toc-number">8.</span> <span class="toc-text">實時預覽</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A8%AD%E5%AE%9A"><span class="toc-number">9.</span> <span class="toc-text">設定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8D%E7%BD%AE"><span class="toc-number">10.</span> <span class="toc-text">位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%8D%B5%E7%9B%A4"><span class="toc-number">11.</span> <span class="toc-text">鍵盤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%87%E5%89%B2%E7%A1%AC%E7%A2%9F"><span class="toc-number">12.</span> <span class="toc-text">切割硬碟</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%86%E7%A2%BC%E9%85%8D%E7%BD%AE"><span class="toc-number">13.</span> <span class="toc-text">密碼配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%BE%8C%E9%85%8D%E7%BD%AE%E6%AA%A2%E6%9F%A5"><span class="toc-number">14.</span> <span class="toc-text">最後配置檢查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99-amp-%E5%9C%96%E7%89%87"><span class="toc-number">15.</span> <span class="toc-text">參考資料&amp;圖片</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025-cloud-hosting-review" title="2025雲端部署平台實測心得">2025雲端部署平台實測心得</a><time datetime="2025-10-19T15:26:00.000Z" title="發表於 2025-10-19 23:26:00">2025-10-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/my-first-lubuntu-laptop" title="我的第一台Lubuntu筆電">我的第一台Lubuntu筆電</a><time datetime="2023-04-23T12:20:37.000Z" title="發表於 2023-04-23 20:20:37">2023-04-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/linebot-development-guide" title="企業級 LineBot 開發完全攻略1：建立一個 YouBike LineBot!">企業級 LineBot 開發完全攻略1：建立一個 YouBike LineBot!</a><time datetime="2023-02-25T14:24:54.000Z" title="發表於 2023-02-25 22:24:54">2023-02-25</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2023 - 2025 By Boris</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日夜模式切換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到頂端"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.5.1/source/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.5.1/source/js/main.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

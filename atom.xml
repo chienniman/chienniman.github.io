@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Boris 軟體坊</title>
+  <icon>https://www.boris.idv.tw/icon.png</icon>
+  <subtitle>Boris 軟體坊</subtitle>
+  <link href="https://www.boris.idv.tw/atom.xml" rel="self"/>
+  
+  <link href="https://www.boris.idv.tw/"/>
+  <updated>2025-10-24T06:10:24.773Z</updated>
+  <id>https://www.boris.idv.tw/</id>
+  
+  <author>
+    <name>Boris</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2025雲端部署平台實測心得</title>
+    <link href="https://www.boris.idv.tw/2025-cloud-hosting-review/"/>
+    <id>https://www.boris.idv.tw/2025-cloud-hosting-review/</id>
+    <published>2025-10-19T15:26:00.000Z</published>
+    <updated>2025-10-24T06:10:24.773Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;身為一個後端工程師，總是需要一個穩定的雲伺服器來部署專案或測試環境。這幾年用過不少服務，從Cloud到</summary>
+        
+      
+    
+    
+    
+    <category term="心得" scheme="https://www.boris.idv.tw/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="VPS" scheme="https://www.boris.idv.tw/tags/VPS/"/>
+    
+    <category term="GCP" scheme="https://www.boris.idv.tw/tags/GCP/"/>
+    
+    <category term="SugarHosts" scheme="https://www.boris.idv.tw/tags/SugarHosts/"/>
+    
+    <category term="踩雷" scheme="https://www.boris.idv.tw/tags/%E8%B8%A9%E9%9B%B7/"/>
+    
+    <category term="心得" scheme="https://www.boris.idv.tw/tags/%E5%BF%83%E5%BE%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的第一台Lubuntu筆電</title>
+    <link href="https://www.boris.idv.tw/my-first-lubuntu-laptop/"/>
+    <id>https://www.boris.idv.tw/my-first-lubuntu-laptop/</id>
+    <published>2023-04-23T12:20:37.000Z</published>
+    <updated>2025-10-25T14:51:26.466Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://www.boris.idv.tw/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://www.boris.idv.tw/tags/Linux/"/>
+    
+    <category term="Lubuntu" scheme="https://www.boris.idv.tw/tags/Lubuntu/"/>
+    
+    <category term="筆電" scheme="https://www.boris.idv.tw/tags/%E7%AD%86%E9%9B%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>企業級 LineBot 開發完全攻略1：建立一個 YouBike LineBot!</title>
+    <link href="https://www.boris.idv.tw/linebot-development-guide/"/>
+    <id>https://www.boris.idv.tw/linebot-development-guide/</id>
+    <published>2023-02-25T14:24:54.000Z</published>
+    <updated>2025-10-25T14:58:09.230Z</updated>
+    
+    
+    <summary type="html">LineBot 不只是聊天機器人！透過 YouBike 通勤助手實戰案例，學會如何用 LineBot 解決真實商業問題。從客戶痛點分析到技術實作，完整揭密如何打造能帶來實際價值的自動化服務。適合想學習 LineBot 開發、提升業務效率的開發者和創業家。</summary>
+    
+    
+    
+    <category term="LineBot 開發" scheme="https://www.boris.idv.tw/categories/LineBot-%E9%96%8B%E7%99%BC/"/>
+    
+    
+    <category term="LineBot" scheme="https://www.boris.idv.tw/tags/LineBot/"/>
+    
+    <category term="第三方API整合" scheme="https://www.boris.idv.tw/tags/%E7%AC%AC%E4%B8%89%E6%96%B9API%E6%95%B4%E5%90%88/"/>
+    
+    <category term="客戶服務" scheme="https://www.boris.idv.tw/tags/%E5%AE%A2%E6%88%B6%E6%9C%8D%E5%8B%99/"/>
+    
+    <category term="數位轉型" scheme="https://www.boris.idv.tw/tags/%E6%95%B8%E4%BD%8D%E8%BD%89%E5%9E%8B/"/>
+    
+  </entry>
+  
+</feed>
