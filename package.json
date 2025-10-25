@@ -7,7 +7,9 @@
         "clean": "hexo clean",
         "deploy": "hexo deploy",
         "server": "hexo server",
-        "build-local": "npm run clean && npm run build && npm run server",
+        "rebuild-and-serve": "npm run clean && npm run build && npm run server",
+        "new-post": "node scripts/new-post.js",
+        "delete-post": "node scripts/delete-post.js",
         "update-submodules": "git submodule update --init --recursive"
     },
     "hexo": {
