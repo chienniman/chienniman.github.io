@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.boris.idv.tw/linebot-development-guide/</loc>
+    <loc>https://www.boris.idv.tw/my-first-lubuntu-laptop/</loc>
     
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2025-10-26</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.boris.idv.tw/my-first-lubuntu-laptop/</loc>
+    <loc>https://www.boris.idv.tw/linebot-development-guide/</loc>
     
     <lastmod>2025-10-25</lastmod>
     
@@ -49,7 +49,7 @@
 
   <url>
     <loc>https://www.boris.idv.tw/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -57,84 +57,63 @@
   
   <url>
     <loc>https://www.boris.idv.tw/tags/VPS/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/GCP/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/SugarHosts/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/%E8%B8%A9%E9%9B%B7/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2025-10-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.boris.idv.tw/tags/Linux/</loc>
-    <lastmod>2025-10-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.boris.idv.tw/tags/Lubuntu/</loc>
-    <lastmod>2025-10-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.boris.idv.tw/tags/%E7%AD%86%E9%9B%BB/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/tags/LineBot/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.boris.idv.tw/tags/%E7%AC%AC%E4%B8%89%E6%96%B9API%E6%95%B4%E5%90%88/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <loc>https://www.boris.idv.tw/tags/Linux/</loc>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.boris.idv.tw/tags/%E5%AE%A2%E6%88%B6%E6%9C%8D%E5%8B%99/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <loc>https://www.boris.idv.tw/tags/Lubuntu/</loc>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.boris.idv.tw/tags/%E6%95%B8%E4%BD%8D%E8%BD%89%E5%9E%8B/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <loc>https://www.boris.idv.tw/tags/%E4%BC%BA%E6%9C%8D%E5%99%A8/</loc>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -143,21 +122,21 @@
   
   <url>
     <loc>https://www.boris.idv.tw/categories/%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2025-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.boris.idv.tw/categories/LineBot/</loc>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.boris.idv.tw/categories/Linux/</loc>
-    <lastmod>2025-10-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.boris.idv.tw/categories/LineBot-%E9%96%8B%E7%99%BC/</loc>
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
