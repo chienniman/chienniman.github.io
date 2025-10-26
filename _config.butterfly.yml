@@ -197,14 +197,14 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-    enable: false
+    enable: true
     QR_code:
-        # - img: /img/wechat.jpg
-        #   link:
-        #   text: wechat
-        # - img: /img/alipay.jpg
-        #   link:
-        #   text: alipay
+        - img: https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png
+          link: https://buymeacoffee.com/borisSoftware
+          text: ☕ 請我喝杯咖啡
+        # - img: /img/paypal.jpg
+        #   link: https://paypal.me/yourusername
+        #   text: PayPal
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -882,7 +882,25 @@ inject:
         - <meta name="msapplication-TileColor" content="#2E86C1">
         - <style>body{font-size:18px !important;}#article-container p,#article-container li,#article-container div{font-size:18px !important;line-height:1.8 !important;}code{font-size:16px !important;}</style>
     bottom:
-        # - <script src="xxxx"></script>
+        - |
+          <script>
+          // 在文章頁面底部加入Buy me a coffee按鈕
+          if (document.querySelector('#article-container')) {
+            const buyMeCoffeeHtml = `
+              <div style="text-align: center; margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background: #f9f9f9;">
+                <h4 style="margin-bottom: 15px; color: #333;">喜歡這篇文章嗎？</h4>
+                <p style="margin-bottom: 20px; color: #666;">如果我的文章對你有幫助，歡迎請我喝杯咖啡！</p>
+                <a href="https://buymeacoffee.com/borisSoftware" target="_blank" style="display: inline-block; padding: 12px 30px; background: #FFDD00; color: #000; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s;">
+                  ☕ 請我喝杯咖啡
+                </a>
+              </div>
+            `;
+            const articleContainer = document.querySelector('#article-container');
+            if (articleContainer) {
+              articleContainer.insertAdjacentHTML('beforeend', buyMeCoffeeHtml);
+            }
+          }
+          </script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
