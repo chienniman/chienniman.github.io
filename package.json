@@ -9,8 +9,8 @@
         "server": "hexo server",
         "deploy-to-github-pages": "npm run clean && npm run build && npm run deploy",
         "rebuild-and-serve": "npm run clean && npm run build && npm run server",
-        "new-post": "node scripts/new-post.js",
-        "delete-post": "node scripts/delete-post.js",
+        "new-post": "node tools/new-post.js",
+        "delete-post": "node tools/delete-post.js",
         "update-submodules": "git submodule update --init --recursive"
     },
     "hexo": {
